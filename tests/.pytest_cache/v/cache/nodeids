@@ -1,0 +1,7 @@
+[
+  "test_Database.py::test_db_create_table",
+  "test_Database.py::test_db_insert",
+  "test_Database.py::test_db_query",
+  "test_Database.py::test_db_update",
+  "test_lmr_secrets.py::test_lmr_secrets"
+]
