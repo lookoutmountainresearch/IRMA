@@ -13,7 +13,44 @@ import MySQLdb
 import lmr_secrets
 import logging
 
-# Create logger for each instance of the database that is used.
+LOGGERNAME = "testing_db_" + datetime.datetime.now().strftime("%Y%m%d%H%M%S") + '.log'
+
+def db_config_logger(*args, level, **kwargs):
+    """
+    The ConfigureLogger function creates a new log file and stores it in the
+    working directory of the program.
+
+    USAGE: ConfigureLogger([optional] level="string")
+
+    Use the keyword argument to pass in the desired level of logging:
+        INFO, DEBUG, WARNING, CRITCAL, or ERROR.
+
+    RETURNS: The name of the logger.
+    """
+    # Create logger and set it to a variable using the global variable LOGGERNAME.
+    logger = logging.getLogger(LOGGERNAME)
+    # If level keyword argument is set use it, otherwise set logging level to INFO.
+    if level is None:
+        logger.setLevel(logging.INFO)
+    elif level is not None:
+        logger.setLevel(logging.DEBUG)
+    # Create a file handler in the current working directory for the program.
+    currentdir = os.path.dirname(os.path.realpath(__file__))
+    handler = logging.FileHandler(currentdir + "/testlogs/" + LOGGERNAME)
+    if level is None:
+        handler.setLevel(logging.INFO)
+    elif level is not None:
+        handler.setLevel(logging.DEBUG)
+    # Create a logging format
+    formatter = logging.Formatter('%(asctime)s %(levelname)s %(filename)s %(module)s %(funcName)s %(lineno)d %(message)s')
+    handler.setFormatter(formatter)
+    # Add the handlers to the logger
+    logger.addHandler(handler)
+
+# Configure and start the logger.
+ConfigureLogger(level="INFO")
+logger = logging.getLogger(LOGGERNAME)
+logger.info("Logger has started for " + __name__ + "...")
 
 def db_connect():
     lmr_secrets.load_db_secrets()

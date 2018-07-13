@@ -1,2 +1,3 @@
 logs/
-app/secrets.py
+app/lmr_secrets.py
+tests/test_lmr_secrets.py
