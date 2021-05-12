@@ -2271,14 +2271,6 @@
         "Reported EPS": -0.4,
         "Surprise(%)": -9.59
     },
-    "AUTL": {
-        "Company": "Autolus Therapeutics plc",
-        "EPS Estimate": -0.6,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": -0.5,
-        "Surprise(%)": 17.36
-    },
     "AUTO": {
         "Company": "AutoWeb, Inc.",
         "EPS Estimate": -0.07,
@@ -2503,14 +2495,6 @@
         "Reported EPS": -0.57,
         "Surprise(%)": -39.71
     },
-    "AXON": {
-        "Company": "Axon Enterprise, Inc.",
-        "EPS Estimate": 0.21,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": 0.31,
-        "Surprise(%)": 46.92
-    },
     "AXS": {
         "Company": "AXIS Capital Holdings Limited",
         "EPS Estimate": 0.44,
@@ -2647,6 +2631,14 @@
         "Reported EPS": 0.3,
         "Surprise(%)": 2207.69
     },
+    "BAP": {
+        "Company": "Credicorp Ltd.",
+        "EPS Estimate": 8.48,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-05",
+        "Reported EPS": 8.31,
+        "Surprise(%)": -1.99
+    },
     "BATRA": {
         "Company": "The Liberty Braves Group",
         "EPS Estimate": -0.82,
@@ -2726,6 +2718,14 @@
         "Earnings Date": "2021-05-04",
         "Reported EPS": -0.6,
         "Surprise(%)": 9.77
+    },
+    "BBU": {
+        "Company": "Brookfield Business Partners L.P.",
+        "EPS Estimate": 1.68,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-04",
+        "Reported EPS": 3.57,
+        "Surprise(%)": 112.5
     },
     "BC": {
         "Company": "Brunswick Corporation",
@@ -4711,6 +4711,14 @@
         "Reported EPS": "-",
         "Surprise(%)": "-"
     },
+    "CKPT": {
+        "Company": "Checkpoint Therapeutics, Inc.",
+        "EPS Estimate": -0.1,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-05",
+        "Reported EPS": -0.09,
+        "Surprise(%)": 14.29
+    },
     "CL": {
         "Company": "Colgate-Palmolive Company",
         "EPS Estimate": 0.79,
@@ -4880,12 +4888,12 @@
         "Surprise(%)": -27.45
     },
     "CLS": {
-        "Company": "Celestica Inc",
+        "Company": "Celestica Inc.",
         "EPS Estimate": 0.2,
-        "Earnings Call Time": "TAS",
+        "Earnings Call Time": "Time Not Supplied",
         "Earnings Date": "2021-04-28",
         "Reported EPS": 0.22,
-        "Surprise(%)": 10.0
+        "Surprise(%)": 8.37
     },
     "CLSK": {
         "Company": "CleanSpark, Inc.",
@@ -4926,6 +4934,14 @@
         "Earnings Date": "2021-04-29",
         "Reported EPS": 1.62,
         "Surprise(%)": 9.61
+    },
+    "CLXT": {
+        "Company": "Calyxt, Inc.",
+        "EPS Estimate": -0.25,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-05",
+        "Reported EPS": -0.24,
+        "Surprise(%)": 5.14
     },
     "CMBM": {
         "Company": "Cambium Networks Corporation",
@@ -5094,14 +5110,6 @@
         "Earnings Date": "2021-04-27",
         "Reported EPS": 0.63,
         "Surprise(%)": 44.16
-    },
-    "CNNE": {
-        "Company": "Cannae Holdings, Inc.",
-        "EPS Estimate": -0.14,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-09",
-        "Reported EPS": "-",
-        "Surprise(%)": "-"
     },
     "CNO": {
         "Company": "CNO Financial Group, Inc.",
@@ -5431,6 +5439,14 @@
         "Reported EPS": 1.96,
         "Surprise(%)": 6.81
     },
+    "CPLG": {
+        "Company": "CorePoint Lodging Inc.",
+        "EPS Estimate": -0.85,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-05",
+        "Reported EPS": -0.54,
+        "Surprise(%)": 36.84
+    },
     "CPLP": {
         "Company": "Capital Product Partners L.P.",
         "EPS Estimate": 0.4,
@@ -5662,6 +5678,14 @@
         "Earnings Date": "2021-05-04",
         "Reported EPS": 0.67,
         "Surprise(%)": 30.86
+    },
+    "CRTX": {
+        "Company": "Cortexyme, Inc.",
+        "EPS Estimate": -0.72,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-05",
+        "Reported EPS": -0.78,
+        "Surprise(%)": -8.18
     },
     "CRUS": {
         "Company": "Cirrus Logic, Inc.",
@@ -6583,14 +6607,6 @@
         "Reported EPS": -0.8,
         "Surprise(%)": -91.85
     },
-    "DLA": {
-        "Company": "Delta Apparel, Inc.",
-        "EPS Estimate": 0.6,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": 0.62,
-        "Surprise(%)": 3.33
-    },
     "DLAKY": {
         "Company": "Deutsche Lufthansa AG",
         "EPS Estimate": "-",
@@ -7278,6 +7294,14 @@
         "Earnings Date": "2021-05-04",
         "Reported EPS": 0.46,
         "Surprise(%)": 5.45
+    },
+    "ELFIF": {
+        "Company": "E-L Financial Corp Ltd",
+        "EPS Estimate": "-",
+        "Earnings Call Time": "TAS",
+        "Earnings Date": "2021-05-06",
+        "Reported EPS": "-",
+        "Surprise(%)": "-"
     },
     "ELMD": {
         "Company": "Electromed Inc",
@@ -8575,14 +8599,6 @@
         "Reported EPS": -1.35,
         "Surprise(%)": -26.52
     },
-    "FNKO": {
-        "Company": "Funko, Inc.",
-        "EPS Estimate": 0.11,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": 0.24,
-        "Surprise(%)": 124.3
-    },
     "FNLIF": {
         "Company": "First National Financial Corp",
         "EPS Estimate": "-",
@@ -8959,14 +8975,6 @@
         "Reported EPS": -0.54,
         "Surprise(%)": 17.81
     },
-    "FUN": {
-        "Company": "Cedar Fair, L.P.",
-        "EPS Estimate": -1.82,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-04",
-        "Reported EPS": -1.95,
-        "Surprise(%)": -7.03
-    },
     "FUNC": {
         "Company": "First United Corp",
         "EPS Estimate": "-",
@@ -8990,6 +8998,14 @@
         "Earnings Date": "2021-05-04",
         "Reported EPS": 0.1,
         "Surprise(%)": 233.33
+    },
+    "FVRR": {
+        "Company": "Fiverr International Ltd.",
+        "EPS Estimate": -0.12,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-05",
+        "Reported EPS": -0.01,
+        "Surprise(%)": 91.45
     },
     "FWONA": {
         "Company": "Formula One Group",
@@ -9519,14 +9535,6 @@
         "Reported EPS": -0.28,
         "Surprise(%)": 11.95
     },
-    "GM": {
-        "Company": "General Motors Company",
-        "EPS Estimate": 1.04,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-04",
-        "Reported EPS": 2.25,
-        "Surprise(%)": 117.18
-    },
     "GMDA": {
         "Company": "Gamida Cell Ltd",
         "EPS Estimate": -0.4,
@@ -10031,14 +10039,6 @@
         "Reported EPS": 4.48,
         "Surprise(%)": 4.09
     },
-    "H": {
-        "Company": "Hyatt Hotels Corporation",
-        "EPS Estimate": -1.3,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-03",
-        "Reported EPS": -5.48,
-        "Surprise(%)": -320.89
-    },
     "HAIN": {
         "Company": "The Hain Celestial Group, Inc.",
         "EPS Estimate": 0.38,
@@ -10526,14 +10526,6 @@
         "Earnings Date": "2021-05-10",
         "Reported EPS": "-",
         "Surprise(%)": "-"
-    },
-    "HSC": {
-        "Company": "Harsco Corporation",
-        "EPS Estimate": 0.04,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-03",
-        "Reported EPS": 0.15,
-        "Surprise(%)": 284.62
     },
     "HSIC": {
         "Company": "Henry Schein, Inc.",
@@ -11055,14 +11047,6 @@
         "Reported EPS": "-",
         "Surprise(%)": "-"
     },
-    "IIN": {
-        "Company": "IntriCon Corporation",
-        "EPS Estimate": "-",
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-09",
-        "Reported EPS": 0.27,
-        "Surprise(%)": 8900.0
-    },
     "IIPR": {
         "Company": "Innovative Industrial Properties, Inc.",
         "EPS Estimate": 0.96,
@@ -11207,6 +11191,14 @@
         "Reported EPS": -0.03,
         "Surprise(%)": 88.81
     },
+    "INGR": {
+        "Company": "Ingredion Incorporated",
+        "EPS Estimate": 1.62,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-03",
+        "Reported EPS": 1.85,
+        "Surprise(%)": 14.06
+    },
     "INGXF": {
         "Company": "Innergex Renewable Energy Inc",
         "EPS Estimate": "-",
@@ -11279,14 +11271,6 @@
         "Reported EPS": -0.74,
         "Surprise(%)": 36.21
     },
-    "INSG": {
-        "Company": "Inseego Corp.",
-        "EPS Estimate": -0.1,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-04",
-        "Reported EPS": -0.08,
-        "Surprise(%)": 16.67
-    },
     "INSM": {
         "Company": "Insmed Incorporated",
         "EPS Estimate": -0.88,
@@ -11342,6 +11326,14 @@
         "Earnings Date": "2021-04-29",
         "Reported EPS": "-",
         "Surprise(%)": "-"
+    },
+    "INTZ": {
+        "Company": "Intrusion Inc.",
+        "EPS Estimate": -0.11,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-03",
+        "Reported EPS": -0.22,
+        "Surprise(%)": -91.3
     },
     "INVE": {
         "Company": "Identiv, Inc.",
@@ -11582,6 +11574,14 @@
         "Earnings Date": "2021-04-29",
         "Reported EPS": "-",
         "Surprise(%)": "-"
+    },
+    "ITGR": {
+        "Company": "Integer Holdings Corporation",
+        "EPS Estimate": 0.84,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-04-28",
+        "Reported EPS": 0.97,
+        "Surprise(%)": 15.48
     },
     "ITIC": {
         "Company": "Investors Title Co",
@@ -12479,14 +12479,6 @@
         "Reported EPS": "-",
         "Surprise(%)": "-"
     },
-    "LASR": {
-        "Company": "nLIGHT, Inc.",
-        "EPS Estimate": 0.05,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": 0.06,
-        "Surprise(%)": 25.0
-    },
     "LAUR": {
         "Company": "Laureate Education, Inc.",
         "EPS Estimate": -0.44,
@@ -12999,6 +12991,14 @@
         "Reported EPS": -0.01,
         "Surprise(%)": -158.82
     },
+    "LPX": {
+        "Company": "Louisiana-Pacific Corporation",
+        "EPS Estimate": 2.7,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-03",
+        "Reported EPS": 3.01,
+        "Surprise(%)": 11.32
+    },
     "LQDT": {
         "Company": "Liquidity Services, Inc.",
         "EPS Estimate": 0.11,
@@ -13183,6 +13183,14 @@
         "Reported EPS": -1.04,
         "Surprise(%)": -18.99
     },
+    "LUNG": {
+        "Company": "Pulmonx Corporation",
+        "EPS Estimate": -0.38,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-03",
+        "Reported EPS": -0.34,
+        "Surprise(%)": 10.05
+    },
     "LUNMF": {
         "Company": "Lundin Mining Corporation",
         "EPS Estimate": 0.22,
@@ -13303,14 +13311,6 @@
         "Reported EPS": 0.88,
         "Surprise(%)": 5.77
     },
-    "MAR": {
-        "Company": "Marriott International, Inc.",
-        "EPS Estimate": 0.03,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-09",
-        "Reported EPS": 0.1,
-        "Surprise(%)": 194.12
-    },
     "MARA": {
         "Company": "Marathon Digital Holdings, Inc.",
         "EPS Estimate": 0.02,
@@ -13350,14 +13350,6 @@
         "Earnings Date": "2021-05-02",
         "Reported EPS": -0.23,
         "Surprise(%)": -37.72
-    },
-    "MBI": {
-        "Company": "MBIA Inc.",
-        "EPS Estimate": -0.51,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-09",
-        "Reported EPS": -2.36,
-        "Surprise(%)": -358.25
     },
     "MBIN": {
         "Company": "Merchants Bancorp",
@@ -13399,14 +13391,6 @@
         "Reported EPS": 0.25,
         "Surprise(%)": -30.36
     },
-    "MCHP": {
-        "Company": "Microchip Technology Incorporated",
-        "EPS Estimate": 1.74,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": 1.85,
-        "Surprise(%)": 6.26
-    },
     "MCK": {
         "Company": "McKesson Corporation",
         "EPS Estimate": 5.04,
@@ -13430,6 +13414,14 @@
         "Earnings Date": "2021-05-02",
         "Reported EPS": "-",
         "Surprise(%)": "-"
+    },
+    "MCRB": {
+        "Company": "Seres Therapeutics, Inc.",
+        "EPS Estimate": -0.31,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-03",
+        "Reported EPS": -0.39,
+        "Surprise(%)": -26.21
     },
     "MCRI": {
         "Company": "Monarch Casino & Resort, Inc.",
@@ -13598,14 +13590,6 @@
         "Earnings Date": "2021-05-10",
         "Reported EPS": "-",
         "Surprise(%)": "-"
-    },
-    "MET": {
-        "Company": "MetLife, Inc.",
-        "EPS Estimate": 1.53,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-04",
-        "Reported EPS": 2.2,
-        "Surprise(%)": 43.7
     },
     "MFA": {
         "Company": "MFA Financial, Inc.",
@@ -14824,12 +14808,12 @@
         "Surprise(%)": -7100.0
     },
     "NFG": {
-        "Company": "National Fuel Gas Co",
+        "Company": "National Fuel Gas Company",
         "EPS Estimate": 1.23,
-        "Earnings Call Time": "TAS",
+        "Earnings Call Time": "Time Not Supplied",
         "Earnings Date": "2021-05-06",
         "Reported EPS": 1.34,
-        "Surprise(%)": 8.94
+        "Surprise(%)": 8.85
     },
     "NFYEF": {
         "Company": "NFI Group Inc",
@@ -14964,6 +14948,14 @@
         "EPS Estimate": 0.38,
         "Earnings Call Time": "Time Not Supplied",
         "Earnings Date": "2021-05-09",
+        "Reported EPS": "-",
+        "Surprise(%)": "-"
+    },
+    "NLS": {
+        "Company": "Nautilus Inc",
+        "EPS Estimate": 0.52,
+        "Earnings Call Time": "TAS",
+        "Earnings Date": "2021-05-10",
         "Reported EPS": "-",
         "Surprise(%)": "-"
     },
@@ -15447,6 +15439,14 @@
         "Reported EPS": "-",
         "Surprise(%)": "-"
     },
+    "NVAX": {
+        "Company": "Novavax, Inc.",
+        "EPS Estimate": -3.6,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-09",
+        "Reported EPS": -3.05,
+        "Surprise(%)": 15.23
+    },
     "NVCN": {
         "Company": "Neovasc Inc.",
         "EPS Estimate": -0.09,
@@ -15798,14 +15798,6 @@
         "Earnings Date": "2021-05-11",
         "Reported EPS": "-",
         "Surprise(%)": "-"
-    },
-    "OEC": {
-        "Company": "Orion Engineered Carbons S.A.",
-        "EPS Estimate": 0.45,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": 0.51,
-        "Surprise(%)": 14.09
     },
     "OFC": {
         "Company": "Corporate Office Properties Trust",
@@ -16679,14 +16671,6 @@
         "Reported EPS": 0.93,
         "Surprise(%)": 20.31
     },
-    "PFGC": {
-        "Company": "Performance Food Group Company",
-        "EPS Estimate": 0.28,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-04",
-        "Reported EPS": 0.19,
-        "Surprise(%)": -32.38
-    },
     "PFHD": {
         "Company": "Professional Holding Corp.",
         "EPS Estimate": 0.39,
@@ -16887,13 +16871,13 @@
         "Reported EPS": -0.81,
         "Surprise(%)": 5.04
     },
-    "PKI": {
-        "Company": "PerkinElmer, Inc.",
-        "EPS Estimate": 3.07,
-        "Earnings Call Time": "Time Not Supplied",
+    "PKIUF": {
+        "Company": "Parkland Corp",
+        "EPS Estimate": "-",
+        "Earnings Call Time": "TAS",
         "Earnings Date": "2021-05-03",
-        "Reported EPS": 3.72,
-        "Surprise(%)": 21.01
+        "Reported EPS": "-",
+        "Surprise(%)": "-"
     },
     "PKKFF": {
         "Company": "Peak Fintech Group Inc.",
@@ -17448,12 +17432,12 @@
         "Surprise(%)": 74.14
     },
     "PTVE": {
-        "Company": "Pactiv Evergreen Inc.",
+        "Company": "Pactiv Evergreen Inc",
         "EPS Estimate": 0.07,
-        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Call Time": "TAS",
         "Earnings Date": "2021-05-04",
         "Reported EPS": 0.14,
-        "Surprise(%)": 105.88
+        "Surprise(%)": 100.0
     },
     "PUMP": {
         "Company": "ProPetro Holding Corp.",
@@ -18143,6 +18127,14 @@
         "Reported EPS": -0.19,
         "Surprise(%)": -4.4
     },
+    "RIGL": {
+        "Company": "Rigel Pharmaceuticals, Inc.",
+        "EPS Estimate": 0.01,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-04",
+        "Reported EPS": 0.22,
+        "Surprise(%)": 4300.0
+    },
     "RILY": {
         "Company": "B. Riley Financial Inc",
         "EPS Estimate": "-",
@@ -18495,14 +18487,6 @@
         "Reported EPS": 0.26,
         "Surprise(%)": 165.31
     },
-    "RVI": {
-        "Company": "Retail Value Inc.",
-        "EPS Estimate": "-",
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-03",
-        "Reported EPS": "-",
-        "Surprise(%)": "-"
-    },
     "RVLV": {
         "Company": "Revolve Group, Inc.",
         "EPS Estimate": 0.13,
@@ -18518,14 +18502,6 @@
         "Earnings Date": "2021-05-09",
         "Reported EPS": -0.53,
         "Surprise(%)": -1.15
-    },
-    "RVNC": {
-        "Company": "Revance Therapeutics Inc",
-        "EPS Estimate": -1.09,
-        "Earnings Call Time": "TAS",
-        "Earnings Date": "2021-05-10",
-        "Reported EPS": "-",
-        "Surprise(%)": "-"
     },
     "RVSB": {
         "Company": "Riverview Bancorp, Inc.",
@@ -19288,12 +19264,12 @@
         "Surprise(%)": 12.57
     },
     "SJI": {
-        "Company": "South Jersey Industries Inc",
+        "Company": "South Jersey Industries, Inc.",
         "EPS Estimate": 1.2,
-        "Earnings Call Time": "TAS",
+        "Earnings Call Time": "Time Not Supplied",
         "Earnings Date": "2021-05-05",
         "Reported EPS": 1.26,
-        "Surprise(%)": 5.0
+        "Surprise(%)": 4.91
     },
     "SJT": {
         "Company": "San Juan Basin Royalty Trust",
@@ -19815,14 +19791,6 @@
         "Reported EPS": 0.05,
         "Surprise(%)": 733.33
     },
-    "SPXC": {
-        "Company": "SPX Corporation",
-        "EPS Estimate": 0.67,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": 0.68,
-        "Surprise(%)": 2.26
-    },
     "SQ": {
         "Company": "Square, Inc.",
         "EPS Estimate": 0.16,
@@ -19830,6 +19798,14 @@
         "Earnings Date": "2021-05-05",
         "Reported EPS": 0.41,
         "Surprise(%)": 153.09
+    },
+    "SQFT": {
+        "Company": "Presidio Property Trust, Inc.",
+        "EPS Estimate": -0.16,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-09",
+        "Reported EPS": "-",
+        "Surprise(%)": "-"
     },
     "SQNS": {
         "Company": "Sequans Communications SA",
@@ -20199,6 +20175,14 @@
         "Reported EPS": 0.49,
         "Surprise(%)": 70.14
     },
+    "SUM": {
+        "Company": "Summit Materials, Inc.",
+        "EPS Estimate": -0.47,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-09",
+        "Reported EPS": -0.33,
+        "Surprise(%)": 30.23
+    },
     "SUN": {
         "Company": "Sunoco LP",
         "EPS Estimate": 0.61,
@@ -20230,6 +20214,22 @@
         "Earnings Date": "2021-05-11",
         "Reported EPS": "-",
         "Surprise(%)": "-"
+    },
+    "SUPN": {
+        "Company": "Supernus Pharmaceuticals, Inc.",
+        "EPS Estimate": 0.24,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-04",
+        "Reported EPS": 0.11,
+        "Surprise(%)": -54.73
+    },
+    "SURF": {
+        "Company": "Surface Oncology, Inc.",
+        "EPS Estimate": -0.41,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-04",
+        "Reported EPS": -0.37,
+        "Surprise(%)": 9.31
     },
     "SVC": {
         "Company": "Service Properties Trust",
@@ -20374,6 +20374,14 @@
         "Earnings Date": "2021-05-04",
         "Reported EPS": -0.13,
         "Surprise(%)": -550.0
+    },
+    "SYNA": {
+        "Company": "Synaptics Incorporated",
+        "EPS Estimate": 1.9,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-05",
+        "Reported EPS": 2.03,
+        "Surprise(%)": 7.12
     },
     "SYNH": {
         "Company": "Syneos Health Inc",
@@ -20863,6 +20871,14 @@
         "Reported EPS": -0.11,
         "Surprise(%)": 56.86
     },
+    "TLRY": {
+        "Company": "Tilray, Inc.",
+        "EPS Estimate": -0.08,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-09",
+        "Reported EPS": -1.75,
+        "Surprise(%)": -2172.73
+    },
     "TLTFF": {
         "Company": "Theralase Technologies Inc",
         "EPS Estimate": "-",
@@ -20879,6 +20895,14 @@
         "Reported EPS": -0.29,
         "Surprise(%)": 0.68
     },
+    "TMHC": {
+        "Company": "Taylor Morrison Home Corporation",
+        "EPS Estimate": 0.75,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-04-28",
+        "Reported EPS": 0.75,
+        "Surprise(%)": -0.27
+    },
     "TMO": {
         "Company": "Thermo Fisher Scientific Inc.",
         "EPS Estimate": 6.65,
@@ -20894,14 +20918,6 @@
         "Earnings Date": "2021-04-29",
         "Reported EPS": 1.72,
         "Surprise(%)": 27.12
-    },
-    "TMST": {
-        "Company": "TimkenSteel Corporation",
-        "EPS Estimate": 0.36,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": 0.43,
-        "Surprise(%)": 19.44
     },
     "TMTNF": {
         "Company": "Toromont Industries Ltd.",
@@ -21951,6 +21967,14 @@
         "Reported EPS": 1.36,
         "Surprise(%)": 3.74
     },
+    "UVSP": {
+        "Company": "Univest Financial Corporation",
+        "EPS Estimate": 0.61,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-04-27",
+        "Reported EPS": 1.11,
+        "Surprise(%)": 83.47
+    },
     "UWMC": {
         "Company": "UWM Holdings Corp",
         "EPS Estimate": "-",
@@ -22559,14 +22583,6 @@
         "Reported EPS": 0.89,
         "Surprise(%)": 3.49
     },
-    "WAT": {
-        "Company": "Waters Corporation",
-        "EPS Estimate": 1.57,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-04",
-        "Reported EPS": 2.29,
-        "Surprise(%)": 46.14
-    },
     "WB": {
         "Company": "Weibo Corporation",
         "EPS Estimate": 0.47,
@@ -22775,14 +22791,6 @@
         "Reported EPS": "-",
         "Surprise(%)": "-"
     },
-    "WK": {
-        "Company": "Workiva Inc.",
-        "EPS Estimate": 0.07,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-03",
-        "Reported EPS": 0.12,
-        "Surprise(%)": 64.38
-    },
     "WKCMF": {
         "Company": "Wacker Chemie AG",
         "EPS Estimate": 1.73,
@@ -22838,6 +22846,14 @@
         "Earnings Date": "2021-05-04",
         "Reported EPS": 2.79,
         "Surprise(%)": 159.53
+    },
+    "WLTW": {
+        "Company": "Willis Towers Watson Public Limited Company",
+        "EPS Estimate": 3.28,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-04-28",
+        "Reported EPS": 3.64,
+        "Surprise(%)": 10.98
     },
     "WLYYF": {
         "Company": "WELL Health Technologies Corp",
@@ -23302,6 +23318,14 @@
         "Earnings Date": "2021-05-04",
         "Reported EPS": -1.26,
         "Surprise(%)": -97.8
+    },
+    "YELP": {
+        "Company": "Yelp Inc.",
+        "EPS Estimate": -0.26,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-05",
+        "Reported EPS": -0.08,
+        "Surprise(%)": 68.75
     },
     "YGRAF": {
         "Company": "Yangarra Resources Ltd",

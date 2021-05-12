@@ -583,14 +583,6 @@
         "Reported EPS": 2.48,
         "Surprise(%)": 7.78
     },
-    "GM": {
-        "Company": "General Motors Company",
-        "EPS Estimate": 1.04,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-04",
-        "Reported EPS": 2.25,
-        "Surprise(%)": 117.18
-    },
     "GNW": {
         "Company": "Genworth Financial, Inc.",
         "EPS Estimate": 0.18,
@@ -783,14 +775,6 @@
         "Reported EPS": 1.74,
         "Surprise(%)": 10.76
     },
-    "MAR": {
-        "Company": "Marriott International, Inc.",
-        "EPS Estimate": 0.03,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-09",
-        "Reported EPS": 0.1,
-        "Surprise(%)": 194.12
-    },
     "MARA": {
         "Company": "Marathon Digital Holdings, Inc.",
         "EPS Estimate": 0.02,
@@ -807,14 +791,6 @@
         "Reported EPS": 1.92,
         "Surprise(%)": 5.96
     },
-    "MCHP": {
-        "Company": "Microchip Technology Incorporated",
-        "EPS Estimate": 1.74,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-05",
-        "Reported EPS": 1.85,
-        "Surprise(%)": 6.26
-    },
     "MCK": {
         "Company": "McKesson Corporation",
         "EPS Estimate": 5.04,
@@ -822,14 +798,6 @@
         "Earnings Date": "2021-05-05",
         "Reported EPS": 5.05,
         "Surprise(%)": 0.26
-    },
-    "MET": {
-        "Company": "MetLife, Inc.",
-        "EPS Estimate": 1.53,
-        "Earnings Call Time": "Time Not Supplied",
-        "Earnings Date": "2021-05-04",
-        "Reported EPS": 2.2,
-        "Surprise(%)": 43.7
     },
     "MO": {
         "Company": "Altria Group, Inc.",
@@ -958,6 +926,14 @@
         "Earnings Date": "2021-05-02",
         "Reported EPS": 0.29,
         "Surprise(%)": 211.83
+    },
+    "NVAX": {
+        "Company": "Novavax, Inc.",
+        "EPS Estimate": -3.6,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-09",
+        "Reported EPS": -3.05,
+        "Surprise(%)": 15.23
     },
     "OLED": {
         "Company": "Universal Display Corporation",
@@ -1398,6 +1374,14 @@
         "Earnings Date": "2021-04-29",
         "Reported EPS": 0.65,
         "Surprise(%)": 10.92
+    },
+    "YELP": {
+        "Company": "Yelp Inc.",
+        "EPS Estimate": -0.26,
+        "Earnings Call Time": "Time Not Supplied",
+        "Earnings Date": "2021-05-05",
+        "Reported EPS": -0.08,
+        "Surprise(%)": 68.75
     },
     "YUM": {
         "Company": "Yum! Brands, Inc.",
