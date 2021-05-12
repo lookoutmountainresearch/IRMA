@@ -1,0 +1,1850 @@
+{
+    "AA": {
+        "company name": "ALCOA CORP COM"
+    },
+    "AAL": {
+        "company name": "AMERICAN AIRLS GROUP INC COM"
+    },
+    "AAOI": {
+        "company name": "APPLIED OPTOELECTRONICS INC COM"
+    },
+    "AAPL": {
+        "company name": "APPLE INC COM"
+    },
+    "ABBV": {
+        "company name": "ABBVIE INC COM"
+    },
+    "ABC": {
+        "company name": "AMERISOURCEBERGEN CORP COM"
+    },
+    "ABNB": {
+        "company name": "AIRBNB INC COM CL A"
+    },
+    "ABT": {
+        "company name": "ABBOTT LABS COM"
+    },
+    "ACAD": {
+        "company name": "ACADIA PHARMACEUTICALS INC COM"
+    },
+    "ACB": {
+        "company name": "AURORA CANNABIS INC COM"
+    },
+    "ACN": {
+        "company name": "ACCENTURE PLC IRELAND SHS CLASS A"
+    },
+    "ADBE": {
+        "company name": "ADOBE SYSTEMS INCORPORATED COM"
+    },
+    "ADI": {
+        "company name": "ANALOG DEVICES INC COM"
+    },
+    "ADM": {
+        "company name": "ARCHER DANIELS MIDLAND CO COM"
+    },
+    "ADP": {
+        "company name": "AUTOMATIC DATA PROCESSING INC COM"
+    },
+    "ADS": {
+        "company name": "ALLIANCE DATA SYSTEMS CORP COM"
+    },
+    "ADSK": {
+        "company name": "AUTODESK INC COM"
+    },
+    "AEO": {
+        "company name": "AMERICAN EAGLE OUTFITTERS INC COM"
+    },
+    "AFL": {
+        "company name": "AFLAC INC COM"
+    },
+    "AG": {
+        "company name": "FIRST MAJESTIC SILVER CORP COM"
+    },
+    "AGNC": {
+        "company name": "AGNC INVT CORP COM"
+    },
+    "AIG": {
+        "company name": "AMERICAN INTL GROUP INC COM NEW"
+    },
+    "AKAM": {
+        "company name": "AKAMAI TECHNOLOGIES INC COM"
+    },
+    "ALGN": {
+        "company name": "ALIGN TECHNOLOGY INC COM"
+    },
+    "ALXN": {
+        "company name": "ALEXION PHARMACEUTICALS INC COM"
+    },
+    "AMAT": {
+        "company name": "APPLIED MATLS INC COM"
+    },
+    "AMBA": {
+        "company name": "AMBARELLA INC SHS"
+    },
+    "AMC": {
+        "company name": "AMC ENTMT HLDGS INC CL A COM"
+    },
+    "AMD": {
+        "company name": "ADVANCED MICRO DEVICES INC COM"
+    },
+    "AMGN": {
+        "company name": "AMGEN INC COM"
+    },
+    "AMLP": {
+        "company name": "ALPS ETF TR ALERIAN MLP"
+    },
+    "AMRN": {
+        "company name": "AMARIN CORP PLC SPONS ADR NEW"
+    },
+    "AMT": {
+        "company name": "AMERICAN TOWER CORP NEW COM"
+    },
+    "AMZN": {
+        "company name": "AMAZON COM INC COM"
+    },
+    "ANET": {
+        "company name": "ARISTA NETWORKS INC COM"
+    },
+    "ANF": {
+        "company name": "ABERCROMBIE & FITCH CO CL A"
+    },
+    "ANTM": {
+        "company name": "ANTHEM INC COM"
+    },
+    "APA": {
+        "company name": "APA CORPORATION COM"
+    },
+    "APO": {
+        "company name": "APOLLO GLOBAL MGMT INC COM CL A"
+    },
+    "APPH": {
+        "company name": "APPHARVEST INC COM"
+    },
+    "APPS": {
+        "company name": "DIGITAL TURBINE INC COM NEW"
+    },
+    "APT": {
+        "company name": "ALPHA PRO TECH LTD COM"
+    },
+    "ARKF": {
+        "company name": "ARK ETF TR FINTECH INNOVA"
+    },
+    "ARKK": {
+        "company name": "ARK ETF TR INNOVATION ETF"
+    },
+    "ASHR": {
+        "company name": "DBX ETF TR XTRACK HRVST CSI"
+    },
+    "ASML": {
+        "company name": "ASML HOLDING N V N Y REGISTRY SHS"
+    },
+    "ATVI": {
+        "company name": "ACTIVISION BLIZZARD INC COM"
+    },
+    "AUY": {
+        "company name": "YAMANA GOLD INC COM"
+    },
+    "AVGO": {
+        "company name": "BROADCOM INC COM"
+    },
+    "AVXL": {
+        "company name": "ANAVEX LIFE SCIENCES CORP COM NEW"
+    },
+    "AXP": {
+        "company name": "AMERICAN EXPRESS CO COM"
+    },
+    "AZN": {
+        "company name": "ASTRAZENECA PLC SPONSORED ADR"
+    },
+    "AZO": {
+        "company name": "AUTOZONE INC COM"
+    },
+    "BA": {
+        "company name": "BOEING CO COM"
+    },
+    "BABA": {
+        "company name": "ALIBABA GROUP HLDG LTD SPONSORED ADS"
+    },
+    "BAC": {
+        "company name": "BK OF AMERICA CORP COM"
+    },
+    "BAX": {
+        "company name": "BAXTER INTL INC COM"
+    },
+    "BB": {
+        "company name": "BLACKBERRY LTD COM"
+    },
+    "BBBY": {
+        "company name": "BED BATH & BEYOND INC COM"
+    },
+    "BBY": {
+        "company name": "BEST BUY INC COM"
+    },
+    "BDX": {
+        "company name": "BECTON DICKINSON & CO COM"
+    },
+    "BHC": {
+        "company name": "BAUSCH HEALTH COS INC COM"
+    },
+    "BIDU": {
+        "company name": "BAIDU INC SPON ADR REP A"
+    },
+    "BIIB": {
+        "company name": "BIOGEN INC COM"
+    },
+    "BILI": {
+        "company name": "BILIBILI INC SPONS ADS REP Z"
+    },
+    "BK": {
+        "company name": "BANK NEW YORK MELLON CORP COM"
+    },
+    "BKNG": {
+        "company name": "BOOKING HOLDINGS INC COM"
+    },
+    "BLK": {
+        "company name": "BLACKROCK INC COM"
+    },
+    "BLNK": {
+        "company name": "BLINK CHARGING CO COM"
+    },
+    "BMY": {
+        "company name": "BRISTOL-MYERS SQUIBB CO COM"
+    },
+    "BNTX": {
+        "company name": "BIONTECH SE SPONSORED ADS"
+    },
+    "BP": {
+        "company name": "BP PLC SPONSORED ADR"
+    },
+    "BRK.B": {
+        "company name": "BERKSHIRE HATHAWAY INC DEL CL B NEW"
+    },
+    "BRZU": {
+        "company name": "DIREXION SHS ETF TR BRZ BL 2X SHS"
+    },
+    "BSX": {
+        "company name": "BOSTON SCIENTIFIC CORP COM"
+    },
+    "BUD": {
+        "company name": "ANHEUSER BUSCH INBEV SA/NV SPONSORED ADR"
+    },
+    "BURL": {
+        "company name": "BURLINGTON STORES INC COM"
+    },
+    "BX": {
+        "company name": "BLACKSTONE GROUP INC COM"
+    },
+    "BYND": {
+        "company name": "BEYOND MEAT INC COM"
+    },
+    "C": {
+        "company name": "CITIGROUP INC COM NEW"
+    },
+    "CAG": {
+        "company name": "CONAGRA BRANDS INC COM"
+    },
+    "CAH": {
+        "company name": "CARDINAL HEALTH INC COM"
+    },
+    "CAT": {
+        "company name": "CATERPILLAR INC COM"
+    },
+    "CBOE": {
+        "company name": "CBOE GLOBAL MKTS INC COM"
+    },
+    "CC": {
+        "company name": "CHEMOURS CO COM"
+    },
+    "CCIV": {
+        "company name": "CHURCHILL CAPITAL CORP IV CL A"
+    },
+    "CCJ": {
+        "company name": "CAMECO CORP COM"
+    },
+    "CCL": {
+        "company name": "CARNIVAL CORP PAIRED CTF"
+    },
+    "CF": {
+        "company name": "CF INDS HLDGS INC COM"
+    },
+    "CGC": {
+        "company name": "CANOPY GROWTH CORP COM"
+    },
+    "CHPT": {
+        "company name": "CHARGEPOINT HOLDINGS INC COM CL A"
+    },
+    "CHTR": {
+        "company name": "CHARTER COMMUNICATIONS INC NEW CL A"
+    },
+    "CHWY": {
+        "company name": "CHEWY INC CL A"
+    },
+    "CI": {
+        "company name": "CIGNA CORP NEW COM"
+    },
+    "CIEN": {
+        "company name": "CIENA CORP COM NEW"
+    },
+    "CL": {
+        "company name": "COLGATE PALMOLIVE CO COM"
+    },
+    "CLDR": {
+        "company name": "CLOUDERA INC COM"
+    },
+    "CLF": {
+        "company name": "CLEVELAND-CLIFFS INC NEW COM"
+    },
+    "CLR": {
+        "company name": "CONTINENTAL RES INC COM"
+    },
+    "CLVS": {
+        "company name": "CLOVIS ONCOLOGY INC COM"
+    },
+    "CLX": {
+        "company name": "CLOROX CO DEL COM"
+    },
+    "CMCSA": {
+        "company name": "COMCAST CORP NEW CL A"
+    },
+    "CME": {
+        "company name": "CME GROUP INC COM"
+    },
+    "CMG": {
+        "company name": "CHIPOTLE MEXICAN GRILL INC COM"
+    },
+    "CMI": {
+        "company name": "CUMMINS INC COM"
+    },
+    "CNC": {
+        "company name": "CENTENE CORP DEL COM"
+    },
+    "CNP": {
+        "company name": "CENTERPOINT ENERGY INC COM"
+    },
+    "CODX": {
+        "company name": "CO-DIAGNOSTICS INC COM"
+    },
+    "COF": {
+        "company name": "CAPITAL ONE FINL CORP COM"
+    },
+    "COG": {
+        "company name": "CABOT OIL & GAS CORP COM"
+    },
+    "COIN": {
+        "company name": "COINBASE GLOBAL INC COM CL A"
+    },
+    "COP": {
+        "company name": "CONOCOPHILLIPS COM"
+    },
+    "COST": {
+        "company name": "COSTCO WHSL CORP NEW COM"
+    },
+    "COTY": {
+        "company name": "COTY INC COM CL A"
+    },
+    "COUP": {
+        "company name": "COUPA SOFTWARE INC COM"
+    },
+    "CPB": {
+        "company name": "CAMPBELL SOUP CO COM"
+    },
+    "CPRI": {
+        "company name": "CAPRI HOLDINGS LIMITED SHS"
+    },
+    "CREE": {
+        "company name": "CREE INC COM"
+    },
+    "CRM": {
+        "company name": "SALESFORCE COM INC COM"
+    },
+    "CRON": {
+        "company name": "CRONOS GROUP INC COM"
+    },
+    "CRSP": {
+        "company name": "CRISPR THERAPEUTICS AG NAMEN AKT"
+    },
+    "CRWD": {
+        "company name": "CROWDSTRIKE HLDGS INC CL A"
+    },
+    "CSCO": {
+        "company name": "CISCO SYS INC COM"
+    },
+    "CSIQ": {
+        "company name": "CANADIAN SOLAR INC COM"
+    },
+    "CSTM": {
+        "company name": "CONSTELLIUM SE CL A SHS"
+    },
+    "CSX": {
+        "company name": "CSX CORP COM"
+    },
+    "CTSH": {
+        "company name": "COGNIZANT TECHNOLOGY SOLUTIONS CL A"
+    },
+    "CTXS": {
+        "company name": "CITRIX SYS INC COM"
+    },
+    "CVNA": {
+        "company name": "CARVANA CO CL A"
+    },
+    "CVS": {
+        "company name": "CVS HEALTH CORP COM"
+    },
+    "CVX": {
+        "company name": "CHEVRON CORP NEW COM"
+    },
+    "CWH": {
+        "company name": "CAMPING WORLD HLDGS INC CL A"
+    },
+    "CYBR": {
+        "company name": "CYBERARK SOFTWARE LTD SHS"
+    },
+    "CYH": {
+        "company name": "COMMUNITY HEALTH SYS INC NEW COM"
+    },
+    "CYRX": {
+        "company name": "CRYOPORT INC COM PAR $0.001"
+    },
+    "CZR": {
+        "company name": "CAESARS ENTERTAINMENT INC NEW COM"
+    },
+    "DAL": {
+        "company name": "DELTA AIR LINES INC DEL COM NEW"
+    },
+    "DASH": {
+        "company name": "DOORDASH INC CL A"
+    },
+    "DB": {
+        "company name": "DEUTSCHE BANK A G NAMEN AKT"
+    },
+    "DBX": {
+        "company name": "DROPBOX INC CL A"
+    },
+    "DD": {
+        "company name": "DUPONT DE NEMOURS INC COM"
+    },
+    "DDD": {
+        "company name": "3-D SYS CORP DEL COM NEW"
+    },
+    "DDOG": {
+        "company name": "DATADOG INC CL A COM"
+    },
+    "DE": {
+        "company name": "DEERE & CO COM"
+    },
+    "DFS": {
+        "company name": "DISCOVER FINL SVCS COM"
+    },
+    "DG": {
+        "company name": "DOLLAR GEN CORP NEW COM"
+    },
+    "DHI": {
+        "company name": "D R HORTON INC COM"
+    },
+    "DIA": {
+        "company name": "SPDR DOW JONES INDL AVERAGE ET UT SER 1"
+    },
+    "DIS": {
+        "company name": "DISNEY WALT CO COM"
+    },
+    "DISH": {
+        "company name": "DISH NETWORK CORPORATION CL A"
+    },
+    "DJX": {
+        "company name": "Dow Jones Industrial Average"
+    },
+    "DKNG": {
+        "company name": "DRAFTKINGS INC COM CL A"
+    },
+    "DKS": {
+        "company name": "DICKS SPORTING GOODS INC COM"
+    },
+    "DLTR": {
+        "company name": "DOLLAR TREE INC COM"
+    },
+    "DOCU": {
+        "company name": "DOCUSIGN INC COM"
+    },
+    "DOW": {
+        "company name": "DOW INC COM"
+    },
+    "DPZ": {
+        "company name": "DOMINOS PIZZA INC COM"
+    },
+    "DUST": {
+        "company name": "DIREXION SHS ETF TR DAILY GOLD MINER"
+    },
+    "DVN": {
+        "company name": "DEVON ENERGY CORP NEW COM"
+    },
+    "EA": {
+        "company name": "ELECTRONIC ARTS INC COM"
+    },
+    "EBAY": {
+        "company name": "EBAY INC. COM"
+    },
+    "ED": {
+        "company name": "CONSOLIDATED EDISON INC COM"
+    },
+    "EDIT": {
+        "company name": "EDITAS MEDICINE INC COM"
+    },
+    "EEM": {
+        "company name": "ISHARES TR MSCI EMG MKT ETF"
+    },
+    "EFA": {
+        "company name": "ISHARES TR MSCI EAFE ETF"
+    },
+    "EGHT": {
+        "company name": "8X8 INC NEW COM"
+    },
+    "EMB": {
+        "company name": "ISHARES TR JPMORGAN USD EMG"
+    },
+    "EMR": {
+        "company name": "EMERSON ELEC CO COM"
+    },
+    "ENDP": {
+        "company name": "ENDO INTL PLC SHS"
+    },
+    "ENPH": {
+        "company name": "ENPHASE ENERGY INC COM"
+    },
+    "EOG": {
+        "company name": "EOG RES INC COM"
+    },
+    "EPD": {
+        "company name": "ENTERPRISE PRODS PARTNERS L P COM"
+    },
+    "ERX": {
+        "company name": "DIREXION SHS ETF TR DLY ENRGY BULL2X"
+    },
+    "ET": {
+        "company name": "ENERGY TRANSFER L P COM UT LTD PTN"
+    },
+    "ETN": {
+        "company name": "EATON CORP PLC SHS"
+    },
+    "ETSY": {
+        "company name": "ETSY INC COM"
+    },
+    "EW": {
+        "company name": "EDWARDS LIFESCIENCES CORP COM"
+    },
+    "EWH": {
+        "company name": "ISHARES INC MSCI HONG KG ETF"
+    },
+    "EWJ": {
+        "company name": "ISHARES INC MSCI JPN ETF NEW"
+    },
+    "EWU": {
+        "company name": "ISHARES TR MSCI UK ETF NEW"
+    },
+    "EWW": {
+        "company name": "ISHARES INC MSCI MEXICO ETF"
+    },
+    "EWY": {
+        "company name": "ISHARES INC MSCI STH KOR ETF"
+    },
+    "EWZ": {
+        "company name": "ISHARES INC MSCI BRAZIL ETF"
+    },
+    "EXAS": {
+        "company name": "EXACT SCIENCES CORP COM"
+    },
+    "EXPE": {
+        "company name": "EXPEDIA GROUP INC COM NEW"
+    },
+    "EXPR": {
+        "company name": "EXPRESS INC COM"
+    },
+    "F": {
+        "company name": "FORD MTR CO DEL COM"
+    },
+    "FAS": {
+        "company name": "DIREXION SHS ETF TR DLY FIN BULL NEW"
+    },
+    "FAZ": {
+        "company name": "DIREXION SHS ETF TR DAILY FINL BEAR"
+    },
+    "FB": {
+        "company name": "FACEBOOK INC CL A"
+    },
+    "FCEL": {
+        "company name": "FUELCELL ENERGY INC COM"
+    },
+    "FCX": {
+        "company name": "FREEPORT-MCMORAN INC CL B"
+    },
+    "FDX": {
+        "company name": "FEDEX CORP COM"
+    },
+    "FEYE": {
+        "company name": "FIREEYE INC COM"
+    },
+    "FEZ": {
+        "company name": "SPDR INDEX SHS FDS EURO STOXX 50"
+    },
+    "FFIV": {
+        "company name": "F5 NETWORKS INC COM"
+    },
+    "FISV": {
+        "company name": "FISERV INC COM"
+    },
+    "FIVE": {
+        "company name": "FIVE BELOW INC COM"
+    },
+    "FL": {
+        "company name": "FOOT LOCKER INC COM"
+    },
+    "FLEX": {
+        "company name": "FLEX LTD ORD"
+    },
+    "FLR": {
+        "company name": "FLUOR CORP NEW COM"
+    },
+    "FOSL": {
+        "company name": "FOSSIL GROUP INC COM"
+    },
+    "FOXA": {
+        "company name": "FOX CORP CL A COM"
+    },
+    "FSLR": {
+        "company name": "FIRST SOLAR INC COM"
+    },
+    "FSLY": {
+        "company name": "FASTLY INC CL A"
+    },
+    "FSR": {
+        "company name": "FISKER INC CL A COM STK"
+    },
+    "FUBO": {
+        "company name": "FUBOTV INC COM"
+    },
+    "FUTU": {
+        "company name": "FUTU HLDGS LTD SPON ADS CL A"
+    },
+    "FXE": {
+        "company name": "INVESCO CURRENCYSHARES EURO TR EURO SHS"
+    },
+    "FXI": {
+        "company name": "ISHARES TR CHINA LG-CAP ETF"
+    },
+    "FXY": {
+        "company name": "INVESCO CURRENCYSHARES JAPANES JAPANESE YEN"
+    },
+    "GD": {
+        "company name": "GENERAL DYNAMICS CORP COM"
+    },
+    "GDX": {
+        "company name": "VANECK VECTORS ETF TR GOLD MINERS ETF"
+    },
+    "GDXJ": {
+        "company name": "VANECK VECTORS ETF TR JR GOLD MINERS E"
+    },
+    "GE": {
+        "company name": "GENERAL ELECTRIC CO COM"
+    },
+    "GILD": {
+        "company name": "GILEAD SCIENCES INC COM"
+    },
+    "GLD": {
+        "company name": "SPDR GOLD TR GOLD SHS"
+    },
+    "GLW": {
+        "company name": "CORNING INC COM"
+    },
+    "GM": {
+        "company name": "GENERAL MTRS CO COM"
+    },
+    "GME": {
+        "company name": "GAMESTOP CORP NEW CL A"
+    },
+    "GNUS": {
+        "company name": "GENIUS BRANDS INTL INC COM"
+    },
+    "GNW": {
+        "company name": "GENWORTH FINL INC COM CL A"
+    },
+    "GOLD": {
+        "company name": "BARRICK GOLD CORP COM"
+    },
+    "GOOG": {
+        "company name": "ALPHABET INC CAP STK CL C"
+    },
+    "GOOGL": {
+        "company name": "ALPHABET INC CAP STK CL A"
+    },
+    "GOOS": {
+        "company name": "CANADA GOOSE HLDGS INC SHS SUB VTG"
+    },
+    "GOTU": {
+        "company name": "GSX TECHEDU INC SPONSORED ADS"
+    },
+    "GP": {
+        "company name": "GREENPOWER MTR CO INC COM NEW"
+    },
+    "GPRO": {
+        "company name": "GOPRO INC CL A"
+    },
+    "GPS": {
+        "company name": "GAP INC COM"
+    },
+    "GRPN": {
+        "company name": "GROUPON INC COM NEW"
+    },
+    "GRWG": {
+        "company name": "GROWGENERATION CORP COM"
+    },
+    "GS": {
+        "company name": "GOLDMAN SACHS GROUP INC COM"
+    },
+    "GSK": {
+        "company name": "GLAXOSMITHKLINE PLC SPONSORED ADR"
+    },
+    "GT": {
+        "company name": "GOODYEAR TIRE & RUBR CO COM"
+    },
+    "HAL": {
+        "company name": "HALLIBURTON CO COM"
+    },
+    "HAS": {
+        "company name": "HASBRO INC COM"
+    },
+    "HBI": {
+        "company name": "HANESBRANDS INC COM"
+    },
+    "HCA": {
+        "company name": "HCA HEALTHCARE INC COM"
+    },
+    "HD": {
+        "company name": "HOME DEPOT INC COM"
+    },
+    "HES": {
+        "company name": "HESS CORP COM"
+    },
+    "HFC": {
+        "company name": "HOLLYFRONTIER CORP COM"
+    },
+    "HIG": {
+        "company name": "HARTFORD FINL SVCS GROUP INC COM"
+    },
+    "HIMX": {
+        "company name": "HIMAX TECHNOLOGIES INC SPONSORED ADR"
+    },
+    "HL": {
+        "company name": "HECLA MNG CO COM"
+    },
+    "HLF": {
+        "company name": "HERBALIFE NUTRITION LTD COM SHS"
+    },
+    "HOG": {
+        "company name": "HARLEY DAVIDSON INC COM"
+    },
+    "HON": {
+        "company name": "HONEYWELL INTL INC COM"
+    },
+    "HPE": {
+        "company name": "HEWLETT PACKARD ENTERPRISE CO COM"
+    },
+    "HPQ": {
+        "company name": "HP INC COM"
+    },
+    "HRL": {
+        "company name": "HORMEL FOODS CORP COM"
+    },
+    "HSBC": {
+        "company name": "HSBC HLDGS PLC SPON ADR NEW"
+    },
+    "HSY": {
+        "company name": "HERSHEY CO COM"
+    },
+    "HUM": {
+        "company name": "HUMANA INC COM"
+    },
+    "HUYA": {
+        "company name": "HUYA INC ADS REP SHS A"
+    },
+    "HYG": {
+        "company name": "ISHARES TR IBOXX HI YD ETF"
+    },
+    "HYLN": {
+        "company name": "HYLIION HOLDINGS CORP COMMON STOCK"
+    },
+    "IAU": {
+        "company name": "ISHARES GOLD TR ISHARES"
+    },
+    "IBB": {
+        "company name": "ISHARES TR NASDAQ BIOTECH"
+    },
+    "IBM": {
+        "company name": "INTERNATIONAL BUSINESS MACHS COM"
+    },
+    "ICLN": {
+        "company name": "ISHARES TR GL CLEAN ENE ETF"
+    },
+    "IEF": {
+        "company name": "ISHARES TR BARCLAYS 7 10 YR"
+    },
+    "IFF": {
+        "company name": "INTERNATIONAL FLAVORS&FRAGRANC COM"
+    },
+    "ILMN": {
+        "company name": "ILLUMINA INC COM"
+    },
+    "INDA": {
+        "company name": "ISHARES TR MSCI INDIA ETF"
+    },
+    "INFN": {
+        "company name": "INFINERA CORP COM"
+    },
+    "INO": {
+        "company name": "INOVIO PHARMACEUTICALS INC COM NEW"
+    },
+    "INTC": {
+        "company name": "INTEL CORP COM"
+    },
+    "INTU": {
+        "company name": "INTUIT COM"
+    },
+    "IP": {
+        "company name": "INTERNATIONAL PAPER CO COM"
+    },
+    "IQ": {
+        "company name": "IQIYI INC SPONSORED ADS"
+    },
+    "IRBT": {
+        "company name": "IROBOT CORP COM"
+    },
+    "ISRG": {
+        "company name": "INTUITIVE SURGICAL INC COM NEW"
+    },
+    "ITB": {
+        "company name": "ISHARES TR US HOME CONS ETF"
+    },
+    "ITW": {
+        "company name": "ILLINOIS TOOL WKS INC COM"
+    },
+    "IVR": {
+        "company name": "INVESCO MORTGAGE CAPITAL INC COM"
+    },
+    "IVV": {
+        "company name": "ISHARES TR CORE S&P500 ETF"
+    },
+    "IWF": {
+        "company name": "ISHARES TR RUS 1000 GRW ETF"
+    },
+    "IWM": {
+        "company name": "ISHARES TR RUSSELL 2000 ETF"
+    },
+    "IYR": {
+        "company name": "ISHARES TR U.S. REAL ES ETF"
+    },
+    "JCI": {
+        "company name": "JOHNSON CTLS INTL PLC SHS"
+    },
+    "JD": {
+        "company name": "JD.COM INC SPON ADR CL A"
+    },
+    "JDST": {
+        "company name": "DIREXION SHS ETF TR DLY JR GOLD 2X"
+    },
+    "JETS": {
+        "company name": "ETF SER SOLUTIONS US GLB JETS"
+    },
+    "JMIA": {
+        "company name": "JUMIA TECHNOLOGIES AG SPONSORED ADS"
+    },
+    "JNJ": {
+        "company name": "JOHNSON & JOHNSON COM"
+    },
+    "JNK": {
+        "company name": "SPDR SER TR BLOOMBERG BRCLYS"
+    },
+    "JNPR": {
+        "company name": "JUNIPER NETWORKS INC COM"
+    },
+    "JNUG": {
+        "company name": "DIREXION SHS ETF TR DAILY JR GLD MIN"
+    },
+    "JPM": {
+        "company name": "JPMORGAN CHASE & CO COM"
+    },
+    "JWN": {
+        "company name": "NORDSTROM INC COM"
+    },
+    "KEY": {
+        "company name": "KEYCORP COM"
+    },
+    "KGC": {
+        "company name": "KINROSS GOLD CORP COM"
+    },
+    "KHC": {
+        "company name": "KRAFT HEINZ CO COM"
+    },
+    "KKR": {
+        "company name": "KKR & CO INC COM"
+    },
+    "KLAC": {
+        "company name": "KLA CORP COM NEW"
+    },
+    "KMB": {
+        "company name": "KIMBERLY-CLARK CORP COM"
+    },
+    "KMI": {
+        "company name": "KINDER MORGAN INC DEL COM"
+    },
+    "KMX": {
+        "company name": "CARMAX INC COM"
+    },
+    "KO": {
+        "company name": "COCA COLA CO COM"
+    },
+    "KODK": {
+        "company name": "EASTMAN KODAK CO COM NEW"
+    },
+    "KR": {
+        "company name": "KROGER CO COM"
+    },
+    "KRE": {
+        "company name": "SPDR SER TR S&P REGL BKG"
+    },
+    "KSS": {
+        "company name": "KOHLS CORP COM"
+    },
+    "KSU": {
+        "company name": "KANSAS CITY SOUTHERN COM NEW"
+    },
+    "LABD": {
+        "company name": "DIREXION SHS ETF TR DAILY S&P BIOTEC"
+    },
+    "LABU": {
+        "company name": "DIREXION SHS ETF TR SP BIOTCH BL NEW"
+    },
+    "LAZR": {
+        "company name": "LUMINAR TECHNOLOGIES INC COM CL A"
+    },
+    "LB": {
+        "company name": "L BRANDS INC COM"
+    },
+    "LBTYK": {
+        "company name": "LIBERTY GLOBAL PLC SHS CL C"
+    },
+    "LEN": {
+        "company name": "LENNAR CORP CL A"
+    },
+    "LI": {
+        "company name": "LI AUTO INC SPONSORED ADS"
+    },
+    "LITE": {
+        "company name": "LUMENTUM HLDGS INC COM"
+    },
+    "LL": {
+        "company name": "LUMBER LIQUIDATORS HLDGS INC COM"
+    },
+    "LLNW": {
+        "company name": "LIMELIGHT NETWORKS INC COM"
+    },
+    "LLY": {
+        "company name": "LILLY ELI & CO COM"
+    },
+    "LMND": {
+        "company name": "LEMONADE INC COM"
+    },
+    "LMT": {
+        "company name": "LOCKHEED MARTIN CORP COM"
+    },
+    "LNG": {
+        "company name": "CHENIERE ENERGY INC COM NEW"
+    },
+    "LOW": {
+        "company name": "LOWES COS INC COM"
+    },
+    "LQD": {
+        "company name": "ISHARES TR IBOXX INV CP ETF"
+    },
+    "LRCX": {
+        "company name": "LAM RESEARCH CORP COM"
+    },
+    "LULU": {
+        "company name": "LULULEMON ATHLETICA INC COM"
+    },
+    "LUMN": {
+        "company name": "LUMEN TECHNOLOGIES INC COM"
+    },
+    "LUV": {
+        "company name": "SOUTHWEST AIRLS CO COM"
+    },
+    "LVS": {
+        "company name": "LAS VEGAS SANDS CORP COM"
+    },
+    "LYFT": {
+        "company name": "LYFT INC CL A COM"
+    },
+    "M": {
+        "company name": "MACYS INC COM"
+    },
+    "MA": {
+        "company name": "MASTERCARD INCORPORATED CL A"
+    },
+    "MAR": {
+        "company name": "MARRIOTT INTL INC NEW CL A"
+    },
+    "MARA": {
+        "company name": "MARATHON DIGITAL HOLDINGS INC COM"
+    },
+    "MAT": {
+        "company name": "MATTEL INC COM"
+    },
+    "MCD": {
+        "company name": "MCDONALDS CORP COM"
+    },
+    "MCHP": {
+        "company name": "MICROCHIP TECHNOLOGY INC. COM"
+    },
+    "MCK": {
+        "company name": "MCKESSON CORP COM"
+    },
+    "MDB": {
+        "company name": "MONGODB INC CL A"
+    },
+    "MDLZ": {
+        "company name": "MONDELEZ INTL INC CL A"
+    },
+    "MDT": {
+        "company name": "MEDTRONIC PLC SHS"
+    },
+    "MDY": {
+        "company name": "SPDR S&P MIDCAP 400 ETF TR UTSER1 S&PDCRP"
+    },
+    "MELI": {
+        "company name": "MERCADOLIBRE INC COM"
+    },
+    "MET": {
+        "company name": "METLIFE INC COM"
+    },
+    "MGM": {
+        "company name": "MGM RESORTS INTERNATIONAL COM"
+    },
+    "MJ": {
+        "company name": "ETF MANAGERS TR ETFMG ALTR HRVST"
+    },
+    "MMM": {
+        "company name": "3M CO COM"
+    },
+    "MNKD": {
+        "company name": "MANNKIND CORP COM NEW"
+    },
+    "MNST": {
+        "company name": "MONSTER BEVERAGE CORP NEW COM"
+    },
+    "MO": {
+        "company name": "ALTRIA GROUP INC COM"
+    },
+    "MOMO": {
+        "company name": "MOMO INC ADR"
+    },
+    "MOS": {
+        "company name": "MOSAIC CO NEW COM"
+    },
+    "MPC": {
+        "company name": "MARATHON PETE CORP COM"
+    },
+    "MRK": {
+        "company name": "MERCK & CO. INC COM"
+    },
+    "MRNA": {
+        "company name": "MODERNA INC COM"
+    },
+    "MRO": {
+        "company name": "MARATHON OIL CORP COM"
+    },
+    "MRUT": {
+        "company name": "Mini Russell 2000 Index"
+    },
+    "MRVL": {
+        "company name": "MARVELL TECHNOLOGY INC COM"
+    },
+    "MS": {
+        "company name": "MORGAN STANLEY COM NEW"
+    },
+    "MSFT": {
+        "company name": "MICROSOFT CORP COM"
+    },
+    "MSTR": {
+        "company name": "MICROSTRATEGY INC CL A NEW"
+    },
+    "MT": {
+        "company name": "ARCELORMITTAL SA LUXEMBOURG NY REGISTRY SH"
+    },
+    "MTCH": {
+        "company name": "MATCH GROUP INC NEW COM"
+    },
+    "MU": {
+        "company name": "MICRON TECHNOLOGY INC COM"
+    },
+    "MXEA": {
+        "company name": "MSCI Emerging Markets Index"
+    },
+    "MXEF": {
+        "company name": "MSCI Emerging Markets Index"
+    },
+    "NAV": {
+        "company name": "NAVISTAR INTL CORP NEW COM"
+    },
+    "NBEV": {
+        "company name": "NEWAGE INC COM"
+    },
+    "NCLH": {
+        "company name": "NORWEGIAN CRUISE LINE HLDG LTD SHS"
+    },
+    "NEM": {
+        "company name": "NEWMONT CORP COM"
+    },
+    "NET": {
+        "company name": "CLOUDFLARE INC CL A COM"
+    },
+    "NFLX": {
+        "company name": "NETFLIX INC COM"
+    },
+    "NIO": {
+        "company name": "NIO INC SPON ADS"
+    },
+    "NKE": {
+        "company name": "NIKE INC CL B"
+    },
+    "NKLA": {
+        "company name": "NIKOLA CORP COM"
+    },
+    "NKTR": {
+        "company name": "NEKTAR THERAPEUTICS COM"
+    },
+    "NLY": {
+        "company name": "ANNALY CAPITAL MANAGEMENT INC COM"
+    },
+    "NNOX": {
+        "company name": "NANO X IMAGING LTD ORD SHS"
+    },
+    "NOC": {
+        "company name": "NORTHROP GRUMMAN CORP COM"
+    },
+    "NOK": {
+        "company name": "NOKIA CORP SPONSORED ADR"
+    },
+    "NOV": {
+        "company name": "NOV INC COM"
+    },
+    "NOW": {
+        "company name": "SERVICENOW INC COM"
+    },
+    "NSC": {
+        "company name": "NORFOLK SOUTHN CORP COM"
+    },
+    "NTAP": {
+        "company name": "NETAPP INC COM"
+    },
+    "NTES": {
+        "company name": "NETEASE INC SPONSORED ADS"
+    },
+    "NTNX": {
+        "company name": "NUTANIX INC CL A"
+    },
+    "NTR": {
+        "company name": "NUTRIEN LTD COM"
+    },
+    "NUE": {
+        "company name": "NUCOR CORP COM"
+    },
+    "NUGT": {
+        "company name": "DIREXION SHS ETF TR DLY GOLD INDX 2X"
+    },
+    "NVAX": {
+        "company name": "NOVAVAX INC COM NEW"
+    },
+    "NVDA": {
+        "company name": "NVIDIA CORPORATION COM"
+    },
+    "NXPI": {
+        "company name": "NXP SEMICONDUCTORS N V COM"
+    },
+    "OEX": {
+        "company name": "S&P 100 index American-style"
+    },
+    "OIH": {
+        "company name": "VANECK VECTORS ETF TR OIL SVCS ETF"
+    },
+    "OKE": {
+        "company name": "ONEOK INC NEW COM"
+    },
+    "OKTA": {
+        "company name": "OKTA INC CL A"
+    },
+    "OLED": {
+        "company name": "UNIVERSAL DISPLAY CORP COM"
+    },
+    "OLN": {
+        "company name": "OLIN CORP COM PAR $1"
+    },
+    "ON": {
+        "company name": "ON SEMICONDUCTOR CORP COM"
+    },
+    "OPK": {
+        "company name": "OPKO HEALTH INC COM"
+    },
+    "ORCL": {
+        "company name": "ORACLE CORP COM"
+    },
+    "OSTK": {
+        "company name": "OVERSTOCK COM INC DEL COM"
+    },
+    "OXY": {
+        "company name": "OCCIDENTAL PETE CORP COM"
+    },
+    "PAA": {
+        "company name": "PLAINS ALL AMERN PIPELINE L P UNIT LTD PARTN"
+    },
+    "PANW": {
+        "company name": "PALO ALTO NETWORKS INC COM"
+    },
+    "PBR": {
+        "company name": "PETROLEO BRASILEIRO SA PETROBR SPONSORED ADR"
+    },
+    "PCG": {
+        "company name": "PG&E CORP COM"
+    },
+    "PDD": {
+        "company name": "PINDUODUO INC SPONSORED ADS"
+    },
+    "PENN": {
+        "company name": "PENN NATL GAMING INC COM"
+    },
+    "PEP": {
+        "company name": "PEPSICO INC COM"
+    },
+    "PFE": {
+        "company name": "PFIZER INC COM"
+    },
+    "PG": {
+        "company name": "PROCTER AND GAMBLE CO COM"
+    },
+    "PHM": {
+        "company name": "PULTE GROUP INC COM"
+    },
+    "PINS": {
+        "company name": "PINTEREST INC CL A"
+    },
+    "PLAY": {
+        "company name": "DAVE & BUSTERS ENTMT INC COM"
+    },
+    "PLTR": {
+        "company name": "PALANTIR TECHNOLOGIES INC CL A"
+    },
+    "PLUG": {
+        "company name": "PLUG POWER INC COM NEW"
+    },
+    "PM": {
+        "company name": "PHILIP MORRIS INTL INC COM"
+    },
+    "PNC": {
+        "company name": "PNC FINL SVCS GROUP INC COM"
+    },
+    "PPG": {
+        "company name": "PPG INDS INC COM"
+    },
+    "PSTH": {
+        "company name": "PERSHING SQUARE TONTINE HLDGS COM CL A"
+    },
+    "PSX": {
+        "company name": "PHILLIPS 66 COM"
+    },
+    "PSXP": {
+        "company name": "PHILLIPS 66 PARTNERS LP COM UNIT REP INT"
+    },
+    "PTON": {
+        "company name": "PELOTON INTERACTIVE INC CL A COM"
+    },
+    "PXD": {
+        "company name": "PIONEER NAT RES CO COM"
+    },
+    "PYPL": {
+        "company name": "PAYPAL HLDGS INC COM"
+    },
+    "PZZA": {
+        "company name": "PAPA JOHNS INTL INC COM"
+    },
+    "QCOM": {
+        "company name": "QUALCOMM INC COM"
+    },
+    "QDEL": {
+        "company name": "QUIDEL CORP COM"
+    },
+    "QQQ": {
+        "company name": "INVESCO QQQ TR UNIT SER 1"
+    },
+    "QS": {
+        "company name": "QUANTUMSCAPE CORP COM CL A"
+    },
+    "RACE": {
+        "company name": "FERRARI N V COM"
+    },
+    "RAD": {
+        "company name": "RITE AID CORP COM"
+    },
+    "RBLX": {
+        "company name": "ROBLOX CORP CL A"
+    },
+    "RCL": {
+        "company name": "ROYAL CARIBBEAN GROUP COM"
+    },
+    "RDS.A": {
+        "company name": "ROYAL DUTCH SHELL PLC SPONS ADR A"
+    },
+    "REGN": {
+        "company name": "REGENERON PHARMACEUTICALS COM"
+    },
+    "RH": {
+        "company name": "RH COM"
+    },
+    "RIDE": {
+        "company name": "LORDSTOWN MOTORS CORP COM CL A"
+    },
+    "RIG": {
+        "company name": "TRANSOCEAN LTD REG SHS"
+    },
+    "RIOT": {
+        "company name": "RIOT BLOCKCHAIN INC COM"
+    },
+    "RKT": {
+        "company name": "ROCKET COS INC COM CL A"
+    },
+    "RMO": {
+        "company name": "ROMEO POWER INC COM"
+    },
+    "RNG": {
+        "company name": "RINGCENTRAL INC CL A"
+    },
+    "ROKU": {
+        "company name": "ROKU INC COM CL A"
+    },
+    "ROST": {
+        "company name": "ROSS STORES INC COM"
+    },
+    "RRC": {
+        "company name": "RANGE RES CORP COM"
+    },
+    "RSX": {
+        "company name": "VANECK VECTORS ETF TR RUSSIA ETF"
+    },
+    "RTX": {
+        "company name": "RAYTHEON TECHNOLOGIES CORP COM"
+    },
+    "RUT": {
+        "company name": "Russell 2000 Index"
+    },
+    "RVLV": {
+        "company name": "REVOLVE GROUP INC CL A"
+    },
+    "SABR": {
+        "company name": "SABRE CORP COM"
+    },
+    "SBUX": {
+        "company name": "STARBUCKS CORP COM"
+    },
+    "SCHW": {
+        "company name": "SCHWAB CHARLES CORP COM"
+    },
+    "SDC": {
+        "company name": "SMILEDIRECTCLUB INC CL A COM"
+    },
+    "SDS": {
+        "company name": "PROSHARES TR ULTRASHRT S&P500"
+    },
+    "SE": {
+        "company name": "SEA LTD SPONSORD ADS"
+    },
+    "SEAS": {
+        "company name": "SEAWORLD ENTMT INC COM"
+    },
+    "SFIX": {
+        "company name": "STITCH FIX INC COM CL A"
+    },
+    "SHAK": {
+        "company name": "SHAKE SHACK INC CL A"
+    },
+    "SHOP": {
+        "company name": "SHOPIFY INC CL A"
+    },
+    "SIG": {
+        "company name": "SIGNET JEWELERS LIMITED SHS"
+    },
+    "SIL": {
+        "company name": "GLOBAL X FDS GLOBAL X SILVER"
+    },
+    "SILJ": {
+        "company name": "ETF MANAGERS TR PRIME JUNIR SLVR"
+    },
+    "SIRI": {
+        "company name": "SIRIUS XM HOLDINGS INC COM"
+    },
+    "SKLZ": {
+        "company name": "SKILLZ INC COM"
+    },
+    "SKX": {
+        "company name": "SKECHERS U S A INC CL A"
+    },
+    "SLB": {
+        "company name": "SCHLUMBERGER LTD COM"
+    },
+    "SLV": {
+        "company name": "ISHARES SILVER TR ISHARES"
+    },
+    "SMH": {
+        "company name": "VANECK VECTORS ETF TR SEMICONDUCTOR ET"
+    },
+    "SNAP": {
+        "company name": "SNAP INC CL A"
+    },
+    "SNDL": {
+        "company name": "SUNDIAL GROWERS INC COM"
+    },
+    "SNOW": {
+        "company name": "SNOWFLAKE INC CL A"
+    },
+    "SNPS": {
+        "company name": "SYNOPSYS INC COM"
+    },
+    "SO": {
+        "company name": "SOUTHERN CO COM"
+    },
+    "SOL": {
+        "company name": "RENESOLA LTD SPONSORED ADS"
+    },
+    "SOLO": {
+        "company name": "ELECTRAMECCANICA VEHS CORP COM NEW"
+    },
+    "SONY": {
+        "company name": "SONY GROUP CORPORATION SPONSORED ADR"
+    },
+    "SOS": {
+        "company name": "SOS LIMITED SPNSORD ADS NEW"
+    },
+    "SPCE": {
+        "company name": "VIRGIN GALACTIC HOLDINGS INC COM"
+    },
+    "SPGI": {
+        "company name": "S&P GLOBAL INC COM"
+    },
+    "SPLK": {
+        "company name": "SPLUNK INC COM"
+    },
+    "SPOT": {
+        "company name": "SPOTIFY TECHNOLOGY S A SHS"
+    },
+    "SPWR": {
+        "company name": "SUNPOWER CORP COM"
+    },
+    "SPX": {
+        "company name": "SPX"
+    },
+    "SPXU": {
+        "company name": "PROSHARES TR ULTRAPRO SHORT S"
+    },
+    "SPY": {
+        "company name": "SPDR S&P 500 ETF TR TR UNIT"
+    },
+    "SQ": {
+        "company name": "SQUARE INC CL A"
+    },
+    "SQQQ": {
+        "company name": "PROSHARES TR ULTRAPRO SHT QQQ"
+    },
+    "SRNE": {
+        "company name": "SORRENTO THERAPEUTICS INC COM NEW"
+    },
+    "SRPT": {
+        "company name": "SAREPTA THERAPEUTICS INC COM"
+    },
+    "SSO": {
+        "company name": "PROSHARES TR PSHS ULT S&P 500"
+    },
+    "SSYS": {
+        "company name": "STRATASYS LTD SHS"
+    },
+    "STMP": {
+        "company name": "STAMPS COM INC COM NEW"
+    },
+    "STNE": {
+        "company name": "STONECO LTD COM CL A"
+    },
+    "STX": {
+        "company name": "SEAGATE TECHNOLOGY PLC SHS"
+    },
+    "STZ": {
+        "company name": "CONSTELLATION BRANDS INC CL A"
+    },
+    "SU": {
+        "company name": "SUNCOR ENERGY INC NEW COM"
+    },
+    "SVXY": {
+        "company name": "PROSHARES TR II SHT VIX ST TRM"
+    },
+    "SWK": {
+        "company name": "STANLEY BLACK & DECKER INC COM"
+    },
+    "SWKS": {
+        "company name": "SKYWORKS SOLUTIONS INC COM"
+    },
+    "SWN": {
+        "company name": "SOUTHWESTERN ENERGY CO COM"
+    },
+    "SYF": {
+        "company name": "SYNCHRONY FINANCIAL COM"
+    },
+    "SYY": {
+        "company name": "SYSCO CORP COM"
+    },
+    "T": {
+        "company name": "AT&T INC COM"
+    },
+    "TAN": {
+        "company name": "INVESCO EXCH TRADED FD TR II SOLAR ETF"
+    },
+    "TAP": {
+        "company name": "MOLSON COORS BEVERAGE CO CL B"
+    },
+    "TBT": {
+        "company name": "PROSHARES TR PSHS ULTSH 20YRS"
+    },
+    "TDOC": {
+        "company name": "TELADOC HEALTH INC COM"
+    },
+    "TEAM": {
+        "company name": "ATLASSIAN CORP PLC CL A"
+    },
+    "TECK": {
+        "company name": "TECK RESOURCES LTD CL B"
+    },
+    "TECS": {
+        "company name": "DIREXION SHS ETF TR DAILY TECHNOLOGY"
+    },
+    "TEVA": {
+        "company name": "TEVA PHARMACEUTICAL INDS LTD SPONSORED ADS"
+    },
+    "TGT": {
+        "company name": "TARGET CORP COM"
+    },
+    "THC": {
+        "company name": "TENET HEALTHCARE CORP COM NEW"
+    },
+    "TJX": {
+        "company name": "TJX COS INC NEW COM"
+    },
+    "TLRY": {
+        "company name": "TILRAY INC COM CL 2"
+    },
+    "TLT": {
+        "company name": "ISHARES TR 20 YR TR BD ETF"
+    },
+    "TME": {
+        "company name": "TENCENT MUSIC ENTMT GROUP SPON ADS"
+    },
+    "TMUS": {
+        "company name": "T-MOBILE US INC COM"
+    },
+    "TNA": {
+        "company name": "DIREXION SHS ETF TR DLY SMCAP BULL3X"
+    },
+    "TNDM": {
+        "company name": "TANDEM DIABETES CARE INC COM NEW"
+    },
+    "TOL": {
+        "company name": "TOLL BROTHERS INC COM"
+    },
+    "TPR": {
+        "company name": "TAPESTRY INC COM"
+    },
+    "TQQQ": {
+        "company name": "PROSHARES TR ULTRAPRO QQQ"
+    },
+    "TRIP": {
+        "company name": "TRIPADVISOR INC COM"
+    },
+    "TSCO": {
+        "company name": "TRACTOR SUPPLY CO COM"
+    },
+    "TSLA": {
+        "company name": "TESLA INC COM"
+    },
+    "TSM": {
+        "company name": "TAIWAN SEMICONDUCTOR MFG LTD SPONSORED ADS"
+    },
+    "TSN": {
+        "company name": "TYSON FOODS INC CL A"
+    },
+    "TTD": {
+        "company name": "THE TRADE DESK INC COM CL A"
+    },
+    "TTM": {
+        "company name": "TATA MTRS LTD SPONSORED ADR"
+    },
+    "TTWO": {
+        "company name": "TAKE-TWO INTERACTIVE SOFTWARE COM"
+    },
+    "TWLO": {
+        "company name": "TWILIO INC CL A"
+    },
+    "TWTR": {
+        "company name": "TWITTER INC COM"
+    },
+    "TXN": {
+        "company name": "TEXAS INSTRS INC COM"
+    },
+    "TZA": {
+        "company name": "DIREXION SHS ETF TR DAILY SM CP BEAR"
+    },
+    "UA": {
+        "company name": "UNDER ARMOUR INC CL C"
+    },
+    "UAA": {
+        "company name": "UNDER ARMOUR INC CL A"
+    },
+    "UAL": {
+        "company name": "UNITED AIRLS HLDGS INC COM"
+    },
+    "UBER": {
+        "company name": "UBER TECHNOLOGIES INC COM"
+    },
+    "UCO": {
+        "company name": "PROSHARES TR II ULTA BLMBG 2017"
+    },
+    "ULTA": {
+        "company name": "ULTA BEAUTY INC COM"
+    },
+    "UNG": {
+        "company name": "UNITED STS NAT GAS FD LP UNIT PAR"
+    },
+    "UNH": {
+        "company name": "UNITEDHEALTH GROUP INC COM"
+    },
+    "UNP": {
+        "company name": "UNION PAC CORP COM"
+    },
+    "UPRO": {
+        "company name": "PROSHARES TR ULTRPRO S&P500"
+    },
+    "UPS": {
+        "company name": "UNITED PARCEL SERVICE INC CL B"
+    },
+    "URBN": {
+        "company name": "URBAN OUTFITTERS INC COM"
+    },
+    "URI": {
+        "company name": "UNITED RENTALS INC COM"
+    },
+    "USB": {
+        "company name": "US BANCORP DEL COM NEW"
+    },
+    "USO": {
+        "company name": "UNITED STS OIL FD LP UNITS"
+    },
+    "UUP": {
+        "company name": "INVESCO DB US DLR INDEX TR BULLISH FD"
+    },
+    "UVXY": {
+        "company name": "PROSHARES TR II ULTRA VIX SHORT"
+    },
+    "V": {
+        "company name": "VISA INC COM CL A"
+    },
+    "VALE": {
+        "company name": "VALE S A SPONSORED ADS"
+    },
+    "VFC": {
+        "company name": "V F CORP COM"
+    },
+    "VIAC": {
+        "company name": "VIACOMCBS INC CL B"
+    },
+    "VIPS": {
+        "company name": "VIPSHOP HOLDINGS LIMITED SPONSORED ADS A"
+    },
+    "VIR": {
+        "company name": "VIR BIOTECHNOLOGY INC COM"
+    },
+    "VIX": {
+        "company name": "CBOE Volatility Index"
+    },
+    "VIXM": {
+        "company name": "PROSHARES TR II VIX MDTRM FUTR N"
+    },
+    "VIXY": {
+        "company name": "PROSHARES TR II VIX SH TRM FUTRS"
+    },
+    "VLO": {
+        "company name": "VALERO ENERGY CORP COM"
+    },
+    "VMW": {
+        "company name": "VMWARE INC CL A COM"
+    },
+    "VOD": {
+        "company name": "VODAFONE GROUP PLC NEW SPONSORED ADR"
+    },
+    "VRTX": {
+        "company name": "VERTEX PHARMACEUTICALS INC COM"
+    },
+    "VTRS": {
+        "company name": "VIATRIS INC COM"
+    },
+    "VWO": {
+        "company name": "VANGUARD INTL EQUITY INDEX FDS FTSE EMR MKT ETF"
+    },
+    "VXRT": {
+        "company name": "VAXART INC COM NEW"
+    },
+    "VXX": {
+        "company name": "BARCLAYS BANK PLC IPTH SR B S&P"
+    },
+    "VZ": {
+        "company name": "VERIZON COMMUNICATIONS INC COM"
+    },
+    "W": {
+        "company name": "WAYFAIR INC CL A"
+    },
+    "WB": {
+        "company name": "WEIBO CORP SPONSORED ADR"
+    },
+    "WBA": {
+        "company name": "WALGREENS BOOTS ALLIANCE INC COM"
+    },
+    "WDAY": {
+        "company name": "WORKDAY INC CL A"
+    },
+    "WDC": {
+        "company name": "WESTERN DIGITAL CORP. COM"
+    },
+    "WFC": {
+        "company name": "WELLS FARGO CO NEW COM"
+    },
+    "WHR": {
+        "company name": "WHIRLPOOL CORP COM"
+    },
+    "WKHS": {
+        "company name": "WORKHORSE GROUP INC COM NEW"
+    },
+    "WMB": {
+        "company name": "WILLIAMS COS INC COM"
+    },
+    "WMT": {
+        "company name": "WALMART INC COM"
+    },
+    "WORK": {
+        "company name": "SLACK TECHNOLOGIES INC COM CL A"
+    },
+    "WPM": {
+        "company name": "WHEATON PRECIOUS METALS CORP COM"
+    },
+    "WW": {
+        "company name": "WW INTL INC COM"
+    },
+    "WY": {
+        "company name": "WEYERHAEUSER CO MTN BE COM NEW"
+    },
+    "WYNN": {
+        "company name": "WYNN RESORTS LTD COM"
+    },
+    "X": {
+        "company name": "UNITED STATES STL CORP NEW COM"
+    },
+    "XBI": {
+        "company name": "SPDR SER TR S&P BIOTECH"
+    },
+    "XEO": {
+        "company name": "S&P 100 index European-style"
+    },
+    "XHB": {
+        "company name": "SPDR SER TR S&P HOMEBUILD"
+    },
+    "XLB": {
+        "company name": "SELECT SECTOR SPDR TR SBI MATERIALS"
+    },
+    "XLC": {
+        "company name": "SELECT SECTOR SPDR TR COMMUNICATION"
+    },
+    "XLE": {
+        "company name": "SELECT SECTOR SPDR TR ENERGY"
+    },
+    "XLF": {
+        "company name": "SELECT SECTOR SPDR TR FINANCIAL"
+    },
+    "XLI": {
+        "company name": "SELECT SECTOR SPDR TR SBI INT-INDS"
+    },
+    "XLK": {
+        "company name": "SELECT SECTOR SPDR TR TECHNOLOGY"
+    },
+    "XLNX": {
+        "company name": "XILINX INC COM"
+    },
+    "XLP": {
+        "company name": "SELECT SECTOR SPDR TR SBI CONS STPLS"
+    },
+    "XLU": {
+        "company name": "SELECT SECTOR SPDR TR SBI INT-UTILS"
+    },
+    "XLV": {
+        "company name": "SELECT SECTOR SPDR TR SBI HEALTHCARE"
+    },
+    "XLY": {
+        "company name": "SELECT SECTOR SPDR TR SBI CONS DISCR"
+    },
+    "XME": {
+        "company name": "SPDR SER TR S&P METALS MNG"
+    },
+    "XOM": {
+        "company name": "EXXON MOBIL CORP COM"
+    },
+    "XOP": {
+        "company name": "SPDR SER TR S&P OILGAS EXP"
+    },
+    "XPEV": {
+        "company name": "XPENG INC ADS"
+    },
+    "XRT": {
+        "company name": "SPDR SER TR S&P RETAIL ETF"
+    },
+    "XSP": {
+        "company name": "Mini-SPX"
+    },
+    "YELP": {
+        "company name": "YELP INC CL A"
+    },
+    "YETI": {
+        "company name": "YETI HLDGS INC COM"
+    },
+    "YINN": {
+        "company name": "DIREXION SHS ETF TR DL FTSE BLL 3X"
+    },
+    "YNDX": {
+        "company name": "YANDEX N V SHS CLASS A"
+    },
+    "YPF": {
+        "company name": "YPF SOCIEDAD ANONIMA SPON ADR CL D"
+    },
+    "YUM": {
+        "company name": "YUM BRANDS INC COM"
+    },
+    "YY": {
+        "company name": "JOYY INC ADS REPSTG COM A"
+    },
+    "Z": {
+        "company name": "ZILLOW GROUP INC CL C CAP STK"
+    },
+    "ZM": {
+        "company name": "ZOOM VIDEO COMMUNICATIONS INC CL A"
+    },
+    "ZNGA": {
+        "company name": "ZYNGA INC CL A"
+    },
+    "ZS": {
+        "company name": "ZSCALER INC COM"
+    }
+}

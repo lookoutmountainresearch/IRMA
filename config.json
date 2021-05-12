@@ -1,0 +1,140 @@
+{
+    "Symbol": "",
+    "Profile": {
+        "url": "https://finance.yahoo.com/quote/{symbol}/profile?p={symbol}",
+        "elements": {
+            "stock type": {
+                "xpath": "//*[@id=\"Col1-0-Profile-Proxy\"]/section/div[2]/div[1]/div/div[6]/span[2]",
+                "value": ""
+            },
+            "description": {
+                "xpath": "//*[@id=\"Col1-0-Profile-Proxy\"]/section/section[2]/p",
+                "value": ""
+            },
+            "category": {
+                "xpath": "//*[@id=\"Col1-0-Profile-Proxy\"]/section/div[2]/div[1]/div/div[1]/span[2]",
+                "value": ""
+            },
+            "fund family": {
+                "xpath": "//*[@id=\"Col1-0-Profile-Proxy\"]/section/div[2]/div[1]/div/div[2]/span[2]",
+                "value": ""
+            },
+            "sector": {
+                "xpath": "//*[@id=\"Col1-0-Profile-Proxy\"]/section/div[1]/div/div/p[2]/span[2]",
+                "value": ""
+            },
+            "industry": {
+                "xpath": "//*[@id=\"Col1-0-Profile-Proxy\"]/section/div[1]/div/div/p[2]/span[4]",
+                "value": ""
+            },
+            "website": {
+                "xpath": "//*[@id=\"Col1-0-Profile-Proxy\"]/section/div[1]/div/div/p[1]/a[2]",
+                "value": ""
+            }
+        }
+    },
+    "Summary": {
+        "url": "https://finance.yahoo.com/quote/{symbol}?p={symbol}",
+        "elements": {
+            "price today": {
+                "xpath": "//*[@id=\"quote-header-info\"]/div[3]/div[1]/div/span[1]",
+                "value": ""
+            },
+            "year price range": {
+                "xpath": "//*[@id=\"quote-summary\"]/div[1]/table/tbody/tr[6]/td[2]",
+                "value": ""
+            },
+            "average volume": {
+                "xpath": "//*[@id=\"quote-summary\"]/div[1]/table/tbody/tr[8]/td[2]/span",
+                "value": ""
+            },
+            "market cap": {
+                "xpath": "//*[@id=\"quote-summary\"]/div[2]/table/tbody/tr[1]/td[2]/span",
+                "value": ""
+            },
+            "pe ratio": {
+                "xpath": "//*[@id=\"quote-summary\"]/div[2]/table/tbody/tr[3]/td[2]/span",
+                "value": ""
+            },
+            "eps": {
+                "xpath": "//*[@id=\"quote-summary\"]/div[2]/table/tbody/tr[4]/td[2]/span",
+                "value": ""
+            },
+            "next earnings date": {
+                "xpath": "//*[@id=\"quote-summary\"]/div[2]/table/tbody/tr[5]/td[2]/span",
+                "value": ""
+            },
+            "forward dividend yield": {
+                "xpath": "//*[@id=\"quote-summary\"]/div[2]/table/tbody/tr[6]/td[2]",
+                "value": ""
+            },
+            "forward dividend date": {
+                "xpath": "//*[@id=\"quote-summary\"]/div[2]/table/tbody/tr[7]/td[2]/span",
+                "value": ""
+            }
+        }
+    },
+    "Price History": {
+        "url": "https://finance.yahoo.com/quote/{symbol}/history?p={symbol}",
+        "elements": {
+            "table": {
+                "xpath": "//*[@id=\"Col1-1-HistoricalDataTable-Proxy\"]/section/div[2]/table",
+                "value": []
+            }
+        }
+    },
+    "Option Chain": {
+        "url": "https://finance.yahoo.com/quote/{symbol}/options?p={symbol}",
+        "elements": {
+            "option chain 1": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[1]",
+                "value": [],
+                "attr": "value"
+            },
+            "option chain 2": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[2]",
+                "value": [],
+                "attr": "value"
+            },
+            "option chain 3": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[3]",
+                "value": [],
+                "attr": "value"
+            },
+            "option chain 4": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[4]",
+                "value": []
+            },
+            "option chain 5": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[5]",
+                "value": [],
+                "attr": "value"
+            },
+            "option chain 6": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[6]",
+                "value": [],
+                "attr": "value"
+            },
+            "option chain 7": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[7]",
+                "value": [],
+                "attr": "value"
+            },
+            "option chain 8": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[8]",
+                "value": [],
+                "attr": "value"
+            },
+            "option chain 9": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[9]",
+                "value": [],
+                "attr": "value"
+            },
+            "option chain 10": {
+                "xpath": "//*[@id=\"Col1-1-OptionContracts-Proxy\"]/section/div/div[1]/select/option[10]",
+                "value": [],
+                "attr": "value"
+            }
+        }
+    }
+}
