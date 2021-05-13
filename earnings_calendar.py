@@ -93,16 +93,20 @@ class EarningsCalendar():
         '''
         offset = 0
         url = f'https://finance.yahoo.com/calendar/earnings?from=2021-05-02&to=2021-05-08&day={earnings_date}&offset={offset}&size=100'
-        webresults = session.get(url)
+        webresults = session.get(url, timeout=2.0)
         # webresults.html.render()
 
         # Check if there are any earnings listed.
         no_earnings_xpath = '//*[@id="fin-cal-table"]/div[2]/div'
         no_earnings_results = webresults.html.xpath(no_earnings_xpath, first=True)
-        if no_earnings_results.text == "We couldn't find any results.":
+        try:
+            if no_earnings_results.text == "We couldn't find any results.":
+                earnings_exist = False
+            else:
+                earnings_exist = True
+        except Exception as e:
+            logger.critical(e)
             earnings_exist = False
-        else:
-            earnings_exist = True
 
         # Get table headings as keys in dictionary
         if earnings_exist is True:
