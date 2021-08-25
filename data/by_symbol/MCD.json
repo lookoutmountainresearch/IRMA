@@ -1,17 +1,20 @@
 {
-    "Average Volume": "3,004,132",
+    "Average Volume": "2,498,855",
     "Description": "McDonald's Corporation operates and franchises McDonald's restaurants in the United States and internationally. Its restaurants offer various food products and beverages, as well as breakfast menu. As of December 31, 2020, the company operated 39,198 restaurants. McDonald's Corporation was founded in 1940 and is based in Chicago, Illinois.",
-    "Dividend Ex-Date": "Feb 26, 2021",
+    "Dividend Ex-Date": "May 28, 2021",
     "EPS": "6.89",
-    "Forward Dividend": "5.16 (2.26%)",
+    "Forward Dividend": "5.16 (2.21%)",
     "Industry": "Restaurants",
-    "Last Updated": "2021-05-12 21:08",
-    "Market Cap": "174.5B",
-    "Next Earnings Date": "Jul 26, 2021 - Jul 30, 2021",
-    "PE Ratio": "33.08",
+    "Last Updated": "2021-08-10 11:09",
+    "Market Cap": "174.433B",
+    "Next Earnings Date": "Nov 08, 2021 - Nov 12, 2021",
+    "PE Ratio": "33.92",
     "Sector": "Consumer Cyclical",
     "Stock Type": "Company",
     "Symbol": "MCD",
     "Website": "http://corporate.mcdonalds.com",
-    "Year Range": "167.85 - 238.18"
+    "Yahoo Chart URL": "https://finance.yahoo.com/quote/MCD/chart?p=MCD",
+    "Yahoo Options URL": "https://finance.yahoo.com/quote/MCD/options?p=MCD",
+    "Yahoo Summary URL": "https://finance.yahoo.com/quote/MCD?p=MCD",
+    "Year Range": "202.73 - 247.05"
 }

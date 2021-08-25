@@ -185,6 +185,9 @@ class CompanyProfile():
             self.scrape_profile_info()
         # Set profile data based on stock_type
         self.profile_data['Last Updated'] = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
+        self.profile_data['Yahoo Summary URL'] = f"https://finance.yahoo.com/quote/{self.symbol}?p={self.symbol}"
+        self.profile_data['Yahoo Chart URL'] = f"https://finance.yahoo.com/quote/{self.symbol}/chart?p={self.symbol}"
+        self.profile_data['Yahoo Options URL'] = f"https://finance.yahoo.com/quote/{self.symbol}/options?p={self.symbol}"
         if stock_type == "Company":
             self.profile_data['Year Range'] = r.html.xpath(
                 data_elements['Company']['Year Range']['xpath'],
@@ -319,7 +322,6 @@ class CompanyProfile():
     ###########################################################################
     # RUN COMMAND
     ###########################################################################
-
     def run(self, **kwargs):
         '''
         Populates profile information about either a company or ETF. If no

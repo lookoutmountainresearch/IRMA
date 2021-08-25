@@ -1,17 +1,20 @@
 {
-    "Average Volume": "2,719,791",
-    "Description": "Xilinx, Inc. designs and develops programmable devices and associated technologies worldwide. The company offers integrated circuits (ICs) in the form of programmable logic devices (PLDs), such as programmable system on chips, and three dimensional ICs; adaptive compute acceleration platform; software design tools to program the PLDs; software development environments and embedded platforms; targeted reference designs; printed circuit boards; and intellectual property (IP) core licenses covering Ethernet, memory controllers, Interlaken, and peripheral component interconnect express interfaces, as well as domain-specific IP in the areas of embedded, digital signal processing and connectivity, and market-specific IP cores. It also offers development boards; development kits, including hardware, design tools, IP, and reference designs that are designed to streamline and accelerate the development of domain-specific and market-specific applications; and configuration products comprising one-time programmable and in-system programmable storage devices to configure field programmable gate arrays. In addition, it provides design, customer training, field engineering, and technical support services. The company offers its products to electronic equipment manufacturers in sub- markets, such as data center, wireless, wireline, aerospace and defense, test and measurement, industrial, scientific and medical, automotive, audio, video and broadcast, and consumer. It sells its products through a network of independent distributors; and through direct sales to original equipment manufacturers and electronic manufacturing service providers, as well as independent sales representatives. The company has a collaboration with Kameleon Security to develop cybersecurity solution for servers, cloud computing, and data centers. Xilinx, Inc. was founded in 1984 and is headquartered in San Jose, California.",
+    "Average Volume": "2,242,542",
+    "Description": "Xilinx, Inc. designs, develops, and markets programmable devices and associated technologies worldwide. The company offers integrated circuits (ICs) in the form of programmable logic devices (PLDs), such as programmable system on chips, and three dimensional ICs; adaptive compute acceleration platform; software design tools to program the PLDs; software development environments and embedded platforms; targeted reference designs; printed circuit boards; and intellectual property (IP) core licenses covering Ethernet, memory controllers, Interlaken, and peripheral component interconnect express interfaces, as well as domain-specific IP in the areas of embedded, digital signal processing and connectivity, and market-specific IP cores. It also offers development boards; development kits, including hardware, design tools, IP, and reference designs that are designed to streamline and accelerate the development of domain-specific and market-specific applications; and configuration products comprising one-time programmable and in-system programmable storage devices to configure field programmable gate arrays. In addition, it provides design, customer training, field engineering, and technical support services. The company offers its products to electronic equipment manufacturers in sub- markets, such as data center, wireless, wired, aerospace and defense, test, measurement and emulation, industrial, scientific and medical, automotive, audio, video and broadcast, and consumer. It sells its products through a network of independent distributors; and through direct sales to original equipment manufacturers and electronic manufacturing service providers, as well as independent sales representatives. Xilinx, Inc. was incorporated in 1984 and is headquartered in San Jose, California.",
     "Dividend Ex-Date": "Nov 09, 2020",
-    "EPS": "2.50",
+    "EPS": "2.62",
     "Forward Dividend": "N/A (N/A)",
     "Industry": "Semiconductors",
-    "Last Updated": "2021-05-12 14:50",
-    "Market Cap": "28.883B",
-    "Next Earnings Date": "Jun 28, 2021 - Jul 02, 2021",
-    "PE Ratio": "47.03",
+    "Last Updated": "2021-08-10 11:10",
+    "Market Cap": "36.023B",
+    "Next Earnings Date": "Oct 19, 2021 - Oct 25, 2021",
+    "PE Ratio": "55.92",
     "Sector": "Technology",
     "Stock Type": "Company",
     "Symbol": "XLNX",
     "Website": "http://www.xilinx.com",
-    "Year Range": "80.45 - 154.93"
+    "Yahoo Chart URL": "https://finance.yahoo.com/quote/XLNX/chart?p=XLNX",
+    "Yahoo Options URL": "https://finance.yahoo.com/quote/XLNX/options?p=XLNX",
+    "Yahoo Summary URL": "https://finance.yahoo.com/quote/XLNX?p=XLNX",
+    "Year Range": "96.71 - 154.93"
 }

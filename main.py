@@ -2,7 +2,23 @@
 This POC tries to use data and analytics to find the options trades to
 maximize profits.
 
-SYNTAX: python main.py [SYMBOL]
+The ideal process is as follows:
+
+1. Create Earnings Calendar & Options objects and run to acquire Earnings
+    Calendar Data & Valid Options List for Analysis
+
+2. Validate data for weekly option symbols
+
+3. Remove the symbols with a negative surprise & negative earnings
+
+4. Get company summary & profile information
+
+5. Get stock price history looking for stocks above SMA-20
+
+6. Get option chain and look for profitable trading strategies
+
+
+SYNTAX: python main.py
 """
 import logging
 import sys
@@ -16,7 +32,7 @@ import os
 import earnings_calendar
 import options
 import stocks
-import stock_history
+import price_history
 import options_chain
 
 
@@ -27,7 +43,7 @@ import options_chain
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s %(name)s %(levelname)-8s %(message)s",
-    filename="moneypress.log",
+    filename="logs/moneypress.log",
     filemode="a"
 )
 logger = logging.getLogger(__name__)
@@ -38,12 +54,20 @@ logger = logging.getLogger(__name__)
 ###############################################################################
 
 
-def rewrite_url(url, symbol):
-    new_url = ""
-    return new_url
-
-
 def get_symbol():
+    """
+    Functions get symbol if one is provided via command line. Eventually, this
+    should run analysis on only the symbol provided.
+
+    Args:
+        None. Function gets arguments provided at the command line.
+
+    Raises:
+        None.
+
+    Returns:
+        None.
+    """
     symbol = None
     try:
         if len(sys.argv) == 2:
@@ -51,7 +75,7 @@ def get_symbol():
         else:
             symbol = input("Enter valid symbol: ")
     except Exception as e:
-        error_message = f"ERROR ({e}): Invalid symbol. Enter 'python main.py [symbol]"
+        error_message = f"ERROR ({e}): Invalid symbol. Enter 'python main.py [symbol]'"
         print(error_message)
         logging.error(error_message)
     return symbol
@@ -125,13 +149,13 @@ if __name__ == "__main__":
     #option_chain = options_chain.OptionsChain(symbol)
     #option_chain.run()
 
-    # Create Objects
+    # Create Earnings Calendar & Options Objects
     ec = earnings_calendar.EarningsCalendar()
     opt = options.Options()
 
     # Acquire Earnings Calendar Data & Valid Options List for Analysis
     ec.run(source_local=False)
-    opt.run(source_local=True)  # When was the last time the weekly option list changed?
+    opt.run(source_local=False)  # When was the last time the weekly option list changed?
 
     # Validate data for weekly option symbols
     data = opt.options_data
@@ -139,10 +163,12 @@ if __name__ == "__main__":
     print(valid_weekly_options)
     print(f"Current record count: {len(valid_weekly_options)}")
 
+    # Remove the symbols with negative earnings
+
     # Remove the symbols with a negative surprise
     for symbol in list(valid_weekly_options):
         try:
-            if valid_weekly_options[symbol]['Surprise(%)'] < 0:
+            if valid_weekly_options[symbol]['Surprise(%)'] < 0 and valid_weekly_options[symbol]['Reported EPS'] < 0.10:
                 valid_weekly_options.pop(symbol)
         except Exception as e:
             print(e)
@@ -153,6 +179,7 @@ if __name__ == "__main__":
 
     # Get company summary & profile information
     for symbol in list(valid_weekly_options):
+        # Create Stocks Company Profile object.
         s = stocks.CompanyProfile(symbol)
         s.run()
 

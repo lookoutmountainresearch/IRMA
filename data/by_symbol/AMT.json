@@ -1,17 +1,20 @@
 {
-    "Average Volume": "2,212,681",
+    "Average Volume": "1,534,904",
     "Description": "American Tower, one of the largest global REITs, is a leading independent owner, operator and developer of multitenant communications real estate with a portfolio of approximately 181,000 communications sites.",
-    "Dividend Ex-Date": "Apr 12, 2021",
+    "Dividend Ex-Date": "Jun 17, 2021",
     "EPS": "4.31",
-    "Forward Dividend": "4.96 (2.01%)",
+    "Forward Dividend": "5.08 (1.82%)",
     "Industry": "REIT\u2014Specialty",
-    "Last Updated": "2021-05-12 21:07",
-    "Market Cap": "109.8B",
-    "Next Earnings Date": "Jul 28, 2021 - Aug 02, 2021",
-    "PE Ratio": "56.14",
+    "Last Updated": "2021-08-10 11:07",
+    "Market Cap": "126.378B",
+    "Next Earnings Date": "Oct 27, 2021 - Nov 01, 2021",
+    "PE Ratio": "64.49",
     "Sector": "Real Estate",
     "Stock Type": "Company",
     "Symbol": "AMT",
     "Website": "http://www.americantower.com",
-    "Year Range": "197.50 - 272.20"
+    "Yahoo Chart URL": "https://finance.yahoo.com/quote/AMT/chart?p=AMT",
+    "Yahoo Options URL": "https://finance.yahoo.com/quote/AMT/options?p=AMT",
+    "Yahoo Summary URL": "https://finance.yahoo.com/quote/AMT?p=AMT",
+    "Year Range": "197.50 - 289.51"
 }

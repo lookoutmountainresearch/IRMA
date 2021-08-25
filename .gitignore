@@ -1,3 +1,65 @@
+
+# Editors
+.vscode/
+
+# Byte-compiled / optmized / DLL files
+__pycache__/
+
+# Distribution / Packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.mox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.coverage
+.hypothesis/
+.pytest_cach3/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+
+# Omit logs directory and log files.
 logs/
-app/lmr_secrets.py
-tests/test_lmr_secrets.py
+
+# Ignore data directory; each clone should start fresh.
+data/*
+data/by_symbol/*
+data/price_history_by_symbol/*
+
