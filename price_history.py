@@ -158,9 +158,11 @@ class PriceHistory():
         # ANALYSIS METRICS
         self.close_trend_days = [1, 3, 9]
         self.close_trend_data = []
+        self.close_trend_average = 0.00
         self.is_trend_positive = ""             # boolean
         self.is_close_greater_than_sma = ""     # boolean
         self.is_close_nearer_2_stdev = ""       # boolean
+        self.price_history_score = 0.00
         return
 
     def convert_date_to_seconds(self, ex_date_str):
@@ -187,6 +189,8 @@ class PriceHistory():
             and "{ex_date_str}" to be {date_in_seconds} .''',
             "DEBUG", True)
         return date_in_seconds
+
+//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[2]/table/tbody/tr[1]/td[2]
 
     def scrape_price_history(self):
         '''
@@ -243,6 +247,12 @@ class PriceHistory():
         '''
         webpage_html = self.scrape_price_history()
 
+        # Get current price
+        current_price_xpath = '//*[@id="quote-header-info"]/div[3]/div[1]/div[1]/span[1]'
+        current_price_results = webpage_html.html.xpath(current_price_xpath, first=True)
+        self.current_price = current_price_results.text
+        log_print("INFO: Set current price.", "INFO", False)
+
         # Find table data headings
         headings_xpath = '//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[2]/table/thead'
         headings_results = webpage_html.html.xpath(headings_xpath, first=True)
@@ -277,9 +287,10 @@ class PriceHistory():
                     headings[6]: int(cells[6].text.replace(",", ""))
                 }
         # Validation
+        log_print("INFO: Set price history data.", "INFO", False)
         log_print(headings, "DEBUG", True)
         log_print(self.price_history_data, "DEBUG", True)
-        self.save_local_data(self.price_history_data)
+        self.save_local_data()
         return
 
     def get_simple_moving_average_data(self):
@@ -297,28 +308,37 @@ class PriceHistory():
             None. Sets the self.sma_data list variable.
         '''
 
+        log_print("INFO: Getting simple moving average data.", "INFO", False)
+
         # Set start and end to get list of values
-        end = len(self.price_history_data)
-        start = end - self.config_period_length
+        absolute_end = len(self.price_history_data) - 1
 
         # Get a list of indexes
         index = []
         for date_index in self.price_history_data:
             index.append(date_index)
+        index.sort()
         log_print(f"Date Indexes: {index}", "DEBUG", True)
 
         # Loop through each period until at the end of the data
-        while start > 0:
+        subset_length = self.config_period_length
+        cycle = 0
+        while subset_length == self.config_period_length:
+            end = absolute_end - cycle
+            start = end - self.config_period_length
+            end_key = index[end]
             log_print(index[start:end], "DEBUG", True)
             values = []
             for entry in index[start:end]:
                 values.append(self.price_history_data[entry]['Close'])
-            key = self.convert_date_to_seconds(self.price_history_data[entry]["Date"])
-            self.sma_data[str(key)] = mean(values)
-            start -= 1
-            end -= 1
-        #self.sma_data.reverse()
+            subset_length = len(values)
+            if subset_length == self.config_period_length:
+                key = self.convert_date_to_seconds(self.price_history_data[end_key]["Date"])
+                self.sma_data[str(key)] = mean(values)
+            cycle += 1
+   
         log_print(f"SMA Data: {self.sma_data}", "DEBUG", True)
+        self.save_local_data()
         return
 
     def get_simple_moving_average(self, day):
@@ -367,28 +387,38 @@ class PriceHistory():
             None. Sets the self.sma_data list variable.
         '''
 
+        log_print("INFO: Getting standard deviation data.", "INFO", False)
+
         # Set start and end to get list of values
-        end = len(self.price_history_data)
-        start = end - self.config_period_length
+        absolute_end = len(self.price_history_data) - 1
 
         # Get a list of indexes
         index = []
         for date_index in self.price_history_data:
             index.append(date_index)
+        index.sort()
         log_print(f"Date Indexes: {index}", "DEBUG", True)
 
         # Loop through each period until at the end of the data
-        while start > 0:
+        subset_length = self.config_period_length
+        cycle = 0
+        while subset_length == self.config_period_length:
+            end = absolute_end - cycle
+            start = end - self.config_period_length
+            end_key = index[end]
             log_print(index[start:end], "DEBUG", True)
             values = []
             for entry in index[start:end]:
                 values.append(self.price_history_data[entry]['Close'])
-            key = self.convert_date_to_seconds(self.price_history_data[entry]["Date"])
-            self.standard_deviation_data[str(key)] = pstdev(values)
-            start -= 1
-            end -= 1
+            subset_length = len(values)
+            if subset_length == self.config_period_length:
+                key = self.convert_date_to_seconds(self.price_history_data[end_key]["Date"])
+                self.standard_deviation_data[str(key)] = pstdev(values)
+            cycle += 1
+   
         #self.standard_deviation_data.reverse()
         log_print(f"ST DEV Data: {self.standard_deviation_data}", "DEBUG", True)
+        self.save_local_data()
         return
 
     def get_standard_deviation(self, day):
@@ -427,21 +457,237 @@ class PriceHistory():
     # ANALYTICS LOGIC
     ###########################################################################
 
+    # Check price trends - Is price history on upward trend?
+    def check_price_history_trends(self):
+        '''
+        This function is used to determine if the close price for a symbol is
+        trending up or down.
 
+        Args:
+            None. Configure the ranges for trend analysis by setting the
+            self.close_trend_days in the object variable. For instance, if 1, 
+            3, & 9 are provided, analysis ranges will be 0-1, 1-3, and 3-9
+            days. An average of all ranges will determine if trend is positive
+            (True) or negative (False).
 
-    def run_analytics(self):
+        Raises:
+            CRITICAL - Cannot divid by zero.
+
+        Returns:
+            None. The function sets the self.close_trend_average and
+            self.is_trend_positive object variables.
+        '''
+        # Get day in seconds for each in range and set to dictionary
+        price_history_days = []
+        for each_day in self.price_history_data:
+            price_history_days.append(each_day)
+
+        trend_ranges = {}
+        trend_ranges_counter = 1
+
+        for day in self.close_trend_days:
+            # Find the start range
+            if trend_ranges == {}:
+                start_range = price_history_days[len(price_history_days)-1]
+            else:
+                start_range = trend_ranges[trend_ranges_counter-1][1]
+
+            # Find the end range
+            day_location = len(price_history_days) - self.close_trend_days[trend_ranges_counter-1]
+            end_range = price_history_days[day_location-1]
+            
+            # Store the range
+            trend_ranges[trend_ranges_counter] = [start_range, end_range]
+
+            trend_ranges_counter += 1
+        
+        log_print(price_history_days, "DEBUG", True)
+        log_print(trend_ranges, "DEBUG", True)
+
+        # Calcuate the trends given the ranges
+        # Formula for slope given to points is m=(y2-y1)/(x2-x1)
+        # x will be date in seconds (trend_ranges)
+        # y will be close price (self.price_history_data)
+        for range in trend_ranges:
+            x1 = trend_ranges[range][1]
+            x2 = trend_ranges[range][0]
+            y1 = self.price_history_data[x1]["Close"]
+            y2 = self.price_history_data[x2]["Close"]
+            try:
+                m = (y2-y1)/(x2-x1)
+            except Exception as e:
+                log_print(e, "CRITICAL", False)
+            self.close_trend_data.append(m)
+
+        # Get average and determine is trend is positive/negative
+        self.close_trend_average = mean(self.close_trend_data)
+        if self.close_trend_average > 0:
+            self.is_trend_positive = True
+        else:
+            self.is_trend_positive = False
+        log_print(f"INFO: Average price history trend: {self.close_trend_average}", "DEBUG", False)
+        log_print(f"INFO: Is trend positive? {self.is_trend_positive}", "DEBUG", False)
+
+        self.save_local_data()
+        return
+
+    # Price check 1 - Is current price above SMA?
+    def price_check_sma(self):
+        '''
+        Checks to see if last close price is above SMA.
+
+        Args:
+            None.
+
+        Raises:
+            None.
+
+        Returns:
+            None. However, the functions sets the is_close_greater_than_sma
+            object variable.
+        '''
+        # Get list of index days.
+        price_history_days = []
+        for each_day in self.price_history_data:
+            price_history_days.append(each_day)
+        price_history_days.sort()
+        last_day = price_history_days[-1]
+        
+        # Get last close price.
+        last_close_price = self.price_history_data[last_day]['Close']
+
+        # Get last SMA
+        last_sma_value = self.sma_data[str(last_day)]
+
+        # Compare last close price to the SMA
+        if last_close_price > last_sma_value:
+            self.is_close_greater_than_sma = True
+        else:
+            self.is_close_greater_than_sma = False
+        
+        log_print(f"INFO: Is last close greater than SMA? {self.is_close_greater_than_sma}",
+            "DEBUG", False)
+        self.save_local_data()
+        return
+
+    # Price check 2 - Is current price above or near SMA + 2 st dev?
+    def price_check_stdev(self):
+        '''
+        Description...
+
+        Args:
+            ...
+
+        Raises:
+            None.
+
+        Returns:
+            ...
+        '''
+        # Get list of index days.
+        price_history_days = []
+        for each_day in self.price_history_data:
+            price_history_days.append(each_day)
+        price_history_days.sort()
+        last_day = price_history_days[-1]
+        
+        # Get last close price.
+        last_close_price = self.price_history_data[last_day]['Close']
+
+        # Get last SMA
+        last_sma_value = self.sma_data[str(last_day)]
+
+        # Calculate a percent of standard deviation above SMA
+        percent_of_2_stdev = 0.66
+        last_stdev_value = self.standard_deviation_data[str(last_day)]
+        stdev_variation = last_stdev_value * 2 * percent_of_2_stdev
+        stdev_threshold_price = last_sma_value + stdev_variation
+
+        # Compare last close price to the SMA
+        if last_close_price > stdev_threshold_price:
+            self.is_close_nearer_2_stdev = True
+        else:
+            self.is_close_nearer_2_stdev = False
+        
+        log_print(f"INFO: Is last close nearing or above 2 standard deviation? {self.is_close_nearer_2_stdev}",
+            "DEBUG", False)
+
+        self.save_local_data()
+        return
+    
+    # Determine a Price History Score
+    def determine_price_history_score(self):
+        '''
+        Description...
+
+        Args:
+            ...
+
+        Raises:
+            None.
+
+        Returns:
+            ...
+        '''
+        # Metrics weightings
+        price_history_trend_weighting = 1
+        price_check_sma_weighting = 2
+        price_check_stdev_weighting = 2
+        total_num_of_options = 5
+
+        if self.is_trend_positive == True:
+            price_history_trend = 1
+        else:
+            price_history_trend = 0
+        if self.is_close_greater_than_sma == True:
+            price_check_sma = 1
+        else:
+            price_check_sma = 0
+        if self.is_close_nearer_2_stdev == True:
+            price_check_stdev = 1
+        else:
+            price_check_stdev = 0
+
+        self.price_history_score = (
+            (
+                (price_history_trend * price_history_trend_weighting) +
+                (price_check_sma * price_check_sma_weighting) +
+                (price_check_stdev * price_check_stdev_weighting)
+            ) / total_num_of_options
+        )
+
+        log_print(f"Price History Score is {self.price_history_score}",
+            "DEBUG", False)
+
+        self.save_local_data()
         return
 
     ###########################################################################
     # SAVE LOCAL DATA & LOAD LOCAL DATA LOGIC
     ###########################################################################
-    def save_local_data(self, data):
+    def save_local_data(self):
         '''
         Saves data to local filesystem under a directory
-            data/price_history_by_symbol/[symbol].json.
+            data/price_history_by_symbol/[symbol].json. Data saved is from the
+            object data:
+                data {
+                    price_history_data = {}
+                    current_price = 0.00
+                    sma_data = {}
+                    standard_deviation_data = {}
+                }
+                analysis {
+                    close_trend_days = [1, 3, 9]
+                    close_trend_data = []
+                    close_trend_average = 0.00
+                    is_trend_positive = True
+                    is_close_greater_than_sma = True
+                    is_close_nearer_2_stdev = True
+                    price_history_score = 0.00
+                }
 
         Args:
-            data (dict): Dictionary data to be saved as json in file
+            None.
 
         Raises:
             None.
@@ -449,16 +695,37 @@ class PriceHistory():
         Returns:
             None. Saves data in file named
                 data/price_history_by_symbol/[symbol].json.
+                The json structure will include two primary segments: data &
+                analysis. Each segment will include several elements.
+
         '''
         save_path = self.config_save_path.strip(f'/{self.symbol}.json')
         # Check if directory exists.
         if not os.path.exists(save_path):
             os.makedirs(save_path)
+        # Structure data.
+        data = {
+            "data": {
+                "price_history_data": self.price_history_data,
+                "current_price": self.current_price,
+                "sma_data": self.sma_data,
+                "standard_deviation_data": self.standard_deviation_data
+            },
+            "analysis": {
+                "close_trend_days": self.close_trend_days,
+                "close_trend_data": self.close_trend_data,
+                "close_trend_average": self.close_trend_average,
+                "is_trend_positive": self.is_trend_positive,
+                "is_close_greater_than_sma": self.is_close_greater_than_sma,
+                "is_close_nearer_2_stdev": self.is_close_nearer_2_stdev,
+                "price_history_score": self.price_history_score
+            }
+        }
         # Save data.
         with open(self.config_save_path, 'w') as outfile:
             json.dump(data, outfile, sort_keys=True,
                       indent=4, separators=(',', ': '))
-            print("Price History data saved.")
+            log_print("INFO: Price History data saved.", "INFO", False)
         return
 
     def load_local_data(self):
@@ -479,8 +746,18 @@ class PriceHistory():
         '''
         with open(self.config_save_path) as json_file:
             data = json.load(json_file)
-            self.earnings_calendar_data = data
-            print("Stock History data loaded.")
+            self.price_history_data = data['data']['price_history_data']
+            self.current_price = data['data']['current_price']
+            self.sma_data = data['data']['sma_data']
+            self.standard_deviation_data = data['data']['standard_deviation_data']
+            self.close_trend_days = data['analysis']['close_trend_days']
+            self.close_trend_data = data['analysis']['close_trend_data']
+            self.close_trend_average = data['analysis']['close_trend_average']
+            self.is_trend_positive = data['analysis']['is_trend_positive']
+            self.is_close_greater_than_sma = data['analysis']['is_close_greater_than_sma']
+            self.is_close_nearer_2_stdev = data['analysis']['is_close_nearer_2_stdev']
+            self.price_history_score = data['analysis']['price_history_score']
+            log_print("INFO: Price History data loaded.", "INFO", False)
         return data
 
     ###########################################################################
@@ -511,23 +788,26 @@ class PriceHistory():
         web_data_arg = kwargs.get("source_web", False)
         local_data_arg = kwargs.get("source_local", False)
 
+        # Acquire data
         if local_data_arg is not False or web_data_arg is True:
             self.get_price_history_data()
         else:
             self.price_history_data = self.load_local_data()
-        print("running simple moving averages")
+        
+        # Transform and perform calculations on data
         self.get_simple_moving_average_data()
         self.get_standard_deviation_data()
+
+        # Run analytics
+        self.check_price_history_trends()
+        self.price_check_sma()
+        self.price_check_stdev()
+        self.determine_price_history_score()
+
         return
 
 
 if __name__ == "__main__":
-    symbol = "MSFT"
+    symbol = "DFS"
     sh = PriceHistory(symbol)
     sh.run(source_web=True)
-    #print(sh.price_history_data)
-    #print(f"Number of stock history records: {len(sh.price_history_data)}")
-    #print(f"Simple Moving Averages: {sh.sma_data}")
-    #print(len(sh.sma_data))
-    #print(f"Standard Deviations: {sh.standard_deviation_data}")
-    #print(len(sh.standard_deviation_data))

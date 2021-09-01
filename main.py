@@ -181,8 +181,20 @@ if __name__ == "__main__":
     for symbol in list(valid_weekly_options):
         # Create Stocks Company Profile object.
         s = stocks.CompanyProfile(symbol)
-        s.run()
+        s.run(source_web=True)
+        valid_weekly_options[symbol]['profile_data'] = s.profile_data
+    
+    save_local_data(valid_weekly_options)
 
     # Get stock price history looking for stocks above SMA-20
-
+    for symbol in list(valid_weekly_options):
+        ph = price_history.PriceHistory(symbol)
+        ph.run(source_web=True)
+        valid_weekly_options[symbol]['is_trend_positive'] = ph.is_trend_positive
+        valid_weekly_options[symbol]['is_close_greater_than_sma'] = ph.is_close_greater_than_sma
+        valid_weekly_options[symbol]['is_close_nearer_2_stdev'] = ph.is_close_nearer_2_stdev
+        valid_weekly_options[symbol]['price_history_score'] = ph.price_history_score
+    
+    save_local_data(valid_weekly_options)
+        
     # Get option chain and look for profitable trading strategies
