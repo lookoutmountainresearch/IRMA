@@ -190,8 +190,6 @@ class PriceHistory():
             "DEBUG", True)
         return date_in_seconds
 
-//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[2]/table/tbody/tr[1]/td[2]
-
     def scrape_price_history(self):
         '''
         Function scrapes data from the price history webpage and returns
@@ -808,6 +806,6 @@ class PriceHistory():
 
 
 if __name__ == "__main__":
-    symbol = "DFS"
+    symbol = "AMBA"
     sh = PriceHistory(symbol)
     sh.run(source_web=True)

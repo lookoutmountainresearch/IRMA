@@ -1,10 +1,10 @@
-
 import logging
 from requests_html import HTMLSession
 session = HTMLSession()
 from bs4 import BeautifulSoup
 import os
 import json
+from datetime import datetime
 
 ###############################################################################
 # ENABLE LOGGING
@@ -38,15 +38,18 @@ class EarningsCalendar():
 
     '''
     def __init__(self):
-        self.earnings_calendar_data = {}
-        self.total_records = len(self.earnings_calendar_data)
+        # CONFIGURATION
         self.config_earnings_days_in_past = 15
+        # DATA
+        self.earnings_calendar_data = {}
+        # ANALYSIS METRICS
+        self.total_records = len(self.earnings_calendar_data)
         return
-
 
     ###############################################################################
     # SCRAPE & VALIDATE DATA FUNCTION(S)
     ###############################################################################
+
     def convert_to_float(self, value):
         '''
         Converts string to float when there are possitve (+) or negative (-) in the
@@ -73,6 +76,38 @@ class EarningsCalendar():
         else:
             converted_value = float(value)
         return converted_value
+
+    def calc_days_since_earnings(self, earnings_date):
+        first_date = datetime.strptime(earnings_date, '%Y-%m-%d')
+        last_date = datetime.today()
+        delta = last_date - first_date
+        return delta.days
+        
+    def calc_earnings_score(self, earnings_surprise, earnings_date):
+        if earnings_surprise == '-':
+            earnings_surprise_score = 0.0
+        elif earnings_surprise >= 10.0 and earnings_surprise < 20.0:
+            earnings_surprise_score = 75.0
+        elif earnings_surprise >= 20.0:
+            earnings_surprise_score = 100.0
+        else:
+            earnings_surprise_score = 0.0
+        
+        num_of_days = self.calc_days_since_earnings(earnings_date)
+        
+        if num_of_days < 5.0:
+            earnings_date_score = 100.0
+        elif num_of_days > 5.0 and num_of_days <= 10.0:
+            earnings_date_score = 75.0
+        else:
+            earnings_date_score = 50.0
+        
+        earnings_score = (
+            earnings_surprise_score +
+            earnings_date_score
+        ) / 2.0
+
+        return earnings_score
 
     def scrape_earnings_calendar_stocks(self, earnings_date):
         '''
@@ -154,12 +189,16 @@ class EarningsCalendar():
                         headings[3]: self.convert_to_float(cells[3].text),
                         headings[4]: self.convert_to_float(cells[4].text),
                         headings[5]: self.convert_to_float(cells[5].text),
-                        headings[6]: earnings_date
+                        headings[6]: earnings_date,
+                        "days_since_earnings": self.calc_days_since_earnings(earnings_date),
+                        "earnings_score": self.calc_earnings_score(
+                            self.convert_to_float(cells[5].text),
+                            earnings_date)
                     }
                 cycle += 1
                 offset += 100
         return
-    
+
     def get_list_of_days(self, number_of_days):
         '''
         Given a number of days, this function will return a list of dates in
@@ -214,11 +253,11 @@ class EarningsCalendar():
         # Auto-save web data to local file
         self.save_local_data(self.earnings_calendar_data)
         return
-    
 
     ###############################################################################
     # SAVE LOCAL DATA & LOAD LOCAL DATA LOGIC
     ###############################################################################
+
     def save_local_data(self, data):
         '''
         Saves earnings data in json format to a local file called
@@ -244,7 +283,7 @@ class EarningsCalendar():
             json.dump(data, outfile, sort_keys=True, indent=4, separators=(',', ': '))
             print("Earnings Calendar data saved.")
         return
-    
+
     def load_local_data(self):
         '''
         Loads earnings calendar data from a local file called
@@ -268,10 +307,10 @@ class EarningsCalendar():
             print("Earnings Calendar data loaded.")
         return data
 
-
     ###############################################################################
     # SAVE CLOUD DATA & LOAD CLOUD DATA
     ###############################################################################
+
     def save_cloud_data(self):
         '''
         #TODO: Add feature to save data to cloud storage
@@ -291,7 +330,7 @@ class EarningsCalendar():
         '''
 
         return
-    
+
     def load_cloud_data(self):
         '''
         #TODO: Add feature to load data from cloud storage
@@ -316,6 +355,7 @@ class EarningsCalendar():
     ###########################################################################
     # RUN COMMAND
     ###########################################################################
+
     def run(self, **kwargs):
         '''
         Populates a list of stocks with earnings in the recent past.
@@ -364,7 +404,7 @@ class EarningsCalendar():
 
 if __name__ == "__main__":
     ec = EarningsCalendar()
-    ec.config_earnings_days_in_past = 2 # Test override of default.
+    # ec.config_earnings_days_in_past = 2 # Test override of default.
     
     ec.run()
     #ec.scrape_earnings_calendar_stocks('2021-05-03')
@@ -373,5 +413,5 @@ if __name__ == "__main__":
     #ec.load_local_data()
     print(len(ec.earnings_calendar_data))
     #ec.save_local_data(ec.earnings_calendar_data)
-    print(ec.earnings_calendar_data["MSFT"])
+    print(ec.earnings_calendar_data["AMBA"])
     

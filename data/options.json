@@ -56,11 +56,17 @@
     "AFL": {
         "company name": "AFLAC INC COM"
     },
+    "AFRM": {
+        "company name": "AFFIRM HLDGS INC COM CL A"
+    },
     "AG": {
         "company name": "FIRST MAJESTIC SILVER CORP COM"
     },
     "AGNC": {
         "company name": "AGNC INVT CORP COM"
+    },
+    "AHT": {
+        "company name": "ASHFORD HOSPITALITY TR INC COM SHS"
     },
     "AIG": {
         "company name": "AMERICAN INTL GROUP INC COM NEW"
@@ -110,6 +116,9 @@
     "ANTM": {
         "company name": "ANTHEM INC COM"
     },
+    "ANY": {
+        "company name": "SPHERE 3D CORP NEW COM"
+    },
     "APA": {
         "company name": "APA CORPORATION COM"
     },
@@ -142,6 +151,9 @@
     },
     "ASML": {
         "company name": "ASML HOLDING N V N Y REGISTRY SHS"
+    },
+    "ASO": {
+        "company name": "ACADEMY SPORTS & OUTDOORS INC COM"
     },
     "ATOS": {
         "company name": "ATOSSA THERAPEUTICS INC COM"
@@ -185,6 +197,9 @@
     "BBBY": {
         "company name": "BED BATH & BEYOND INC COM"
     },
+    "BBIG": {
+        "company name": "VINCO VENTURES INC COM"
+    },
     "BBWI": {
         "company name": "BATH & BODY WORKS INC COM"
     },
@@ -205,6 +220,9 @@
     },
     "BILI": {
         "company name": "BILIBILI INC SPONS ADS REP Z"
+    },
+    "BITO": {
+        "company name": "PROSHARES TR BITCOIN STRATE"
     },
     "BK": {
         "company name": "BANK NEW YORK MELLON CORP COM"
@@ -235,6 +253,9 @@
     },
     "BSX": {
         "company name": "BOSTON SCIENTIFIC CORP COM"
+    },
+    "BTBT": {
+        "company name": "BIT DIGITAL INC SHS"
     },
     "BUD": {
         "company name": "ANHEUSER BUSCH INBEV SA/NV SPONSORED ADR"
@@ -272,6 +293,9 @@
     "CCL": {
         "company name": "CARNIVAL CORP PAIRED CTF"
     },
+    "CEI": {
+        "company name": "CAMBER ENERGY INC COM"
+    },
     "CF": {
         "company name": "CF INDS HLDGS INC COM"
     },
@@ -295,9 +319,6 @@
     },
     "CL": {
         "company name": "COLGATE PALMOLIVE CO COM"
-    },
-    "CLDR": {
-        "company name": "CLOUDERA INC COM"
     },
     "CLF": {
         "company name": "CLEVELAND-CLIFFS INC NEW COM"
@@ -326,17 +347,11 @@
     "CNC": {
         "company name": "CENTENE CORP DEL COM"
     },
-    "CNP": {
-        "company name": "CENTERPOINT ENERGY INC COM"
-    },
     "CODX": {
         "company name": "CO-DIAGNOSTICS INC COM"
     },
     "COF": {
         "company name": "CAPITAL ONE FINL CORP COM"
-    },
-    "COG": {
-        "company name": "CABOT OIL & GAS CORP COM"
     },
     "COIN": {
         "company name": "COINBASE GLOBAL INC COM CL A"
@@ -358,9 +373,6 @@
     },
     "CPRI": {
         "company name": "CAPRI HOLDINGS LIMITED SHS"
-    },
-    "CREE": {
-        "company name": "CREE INC COM"
     },
     "CRM": {
         "company name": "SALESFORCE COM INC COM"
@@ -386,6 +398,9 @@
     "CSX": {
         "company name": "CSX CORP COM"
     },
+    "CTRA": {
+        "company name": "COTERRA ENERGY INC COM"
+    },
     "CTSH": {
         "company name": "COGNIZANT TECHNOLOGY SOLUTIONS CL A"
     },
@@ -409,9 +424,6 @@
     },
     "CYH": {
         "company name": "COMMUNITY HEALTH SYS INC NEW COM"
-    },
-    "CYRX": {
-        "company name": "CRYOPORT INC COM PAR $0.001"
     },
     "CZR": {
         "company name": "CAESARS ENTERTAINMENT INC NEW COM"
@@ -448,6 +460,9 @@
     },
     "DHI": {
         "company name": "D R HORTON INC COM"
+    },
+    "DHR": {
+        "company name": "DANAHER CORPORATION COM"
     },
     "DIA": {
         "company name": "SPDR DOW JONES INDL AVERAGE ET UT SER 1"
@@ -590,9 +605,6 @@
     "FDX": {
         "company name": "FEDEX CORP COM"
     },
-    "FEYE": {
-        "company name": "FIREEYE INC COM"
-    },
     "FEZ": {
         "company name": "SPDR INDEX SHS FDS EURO STOXX 50"
     },
@@ -651,10 +663,10 @@
         "company name": "GENERAL DYNAMICS CORP COM"
     },
     "GDX": {
-        "company name": "VANECK VECTORS ETF TR GOLD MINERS ETF"
+        "company name": "VANECK ETF TRUST GOLD MINERS ETF"
     },
     "GDXJ": {
-        "company name": "VANECK VECTORS ETF TR JR GOLD MINERS E"
+        "company name": "VANECK ETF TRUST JUNIOR GOLD MINE"
     },
     "GE": {
         "company name": "GENERAL ELECTRIC CO COM NEW"
@@ -695,14 +707,14 @@
     "GOOS": {
         "company name": "CANADA GOOSE HLDGS INC SHS SUB VTG"
     },
-    "GP": {
-        "company name": "GREENPOWER MTR CO INC COM NEW"
-    },
     "GPRO": {
         "company name": "GOPRO INC CL A"
     },
     "GPS": {
         "company name": "GAP INC COM"
+    },
+    "GREE": {
+        "company name": "GREENIDGE GENERATION HLDGS INC CLASS A COM"
     },
     "GRPN": {
         "company name": "GROUPON INC COM NEW"
@@ -718,6 +730,9 @@
     },
     "GT": {
         "company name": "GOODYEAR TIRE & RUBR CO COM"
+    },
+    "GWH": {
+        "company name": "ESS TECH INC COMMON STOCK"
     },
     "HAL": {
         "company name": "HALLIBURTON CO COM"
@@ -779,6 +794,9 @@
     "HUM": {
         "company name": "HUMANA INC COM"
     },
+    "HUT": {
+        "company name": "HUT 8 MNG CORP COM"
+    },
     "HUYA": {
         "company name": "HUYA INC ADS REP SHS A"
     },
@@ -802,9 +820,6 @@
     },
     "IEF": {
         "company name": "ISHARES TR BARCLAYS 7 10 YR"
-    },
-    "IFF": {
-        "company name": "INTERNATIONAL FLAVORS&FRAGRANC COM"
     },
     "ILMN": {
         "company name": "ILLUMINA INC COM"
@@ -832,6 +847,9 @@
     },
     "IRBT": {
         "company name": "IROBOT CORP COM"
+    },
+    "IRNT": {
+        "company name": "IRONNET INC COM"
     },
     "ISRG": {
         "company name": "INTUITIVE SURGICAL INC COM NEW"
@@ -944,9 +962,6 @@
     "LAZR": {
         "company name": "LUMINAR TECHNOLOGIES INC COM CL A"
     },
-    "LBTYK": {
-        "company name": "LIBERTY GLOBAL PLC SHS CL C"
-    },
     "LCID": {
         "company name": "LUCID GROUP INC COM"
     },
@@ -1049,6 +1064,9 @@
     "MMM": {
         "company name": "3M CO COM"
     },
+    "MNDT": {
+        "company name": "MANDIANT INC COM"
+    },
     "MNKD": {
         "company name": "MANNKIND CORP COM NEW"
     },
@@ -1136,9 +1154,6 @@
     "NKLA": {
         "company name": "NIKOLA CORP COM"
     },
-    "NKTR": {
-        "company name": "NEKTAR THERAPEUTICS COM"
-    },
     "NLY": {
         "company name": "ANNALY CAPITAL MANAGEMENT INC COM"
     },
@@ -1194,7 +1209,7 @@
         "company name": "S&P 100 index American-style"
     },
     "OIH": {
-        "company name": "VANECK VECTORS ETF TR OIL SVCS ETF"
+        "company name": "VANECK ETF TRUST OIL SERVICES ETF"
     },
     "OKE": {
         "company name": "ONEOK INC NEW COM"
@@ -1280,6 +1295,9 @@
     "PPG": {
         "company name": "PPG INDS INC COM"
     },
+    "PSFE": {
+        "company name": "PAYSAFE LIMITED ORD"
+    },
     "PSTH": {
         "company name": "PERSHING SQUARE TONTINE HLDGS COM CL A"
     },
@@ -1346,6 +1364,9 @@
     "RKT": {
         "company name": "ROCKET COS INC COM CL A"
     },
+    "RL": {
+        "company name": "RALPH LAUREN CORP CL A"
+    },
     "RMO": {
         "company name": "ROMEO POWER INC COM"
     },
@@ -1362,7 +1383,7 @@
         "company name": "RANGE RES CORP COM"
     },
     "RSX": {
-        "company name": "VANECK VECTORS ETF TR RUSSIA ETF"
+        "company name": "VANECK ETF TRUST VANECK RUSSIA ET"
     },
     "RTX": {
         "company name": "RAYTHEON TECHNOLOGIES CORP COM"
@@ -1431,7 +1452,7 @@
         "company name": "ISHARES SILVER TR ISHARES"
     },
     "SMH": {
-        "company name": "VANECK VECTORS ETF TR SEMICONDUCTOR ET"
+        "company name": "VANECK ETF TRUST SEMICONDUCTR ETF"
     },
     "SNAP": {
         "company name": "SNAP INC CL A"
@@ -1465,6 +1486,12 @@
     },
     "SOS": {
         "company name": "SOS LIMITED SPNSORD ADS NEW"
+    },
+    "SOXL": {
+        "company name": "DIREXION SHS ETF TR DLY SCOND 3XBU"
+    },
+    "SOXS": {
+        "company name": "DIREXION SHS ETF TR DLY SEMICNDTR BR"
     },
     "SPCE": {
         "company name": "VIRGIN GALACTIC HOLDINGS INC COM"
@@ -1511,9 +1538,6 @@
     "STEM": {
         "company name": "STEM INC COM"
     },
-    "STMP": {
-        "company name": "STAMPS COM INC COM NEW"
-    },
     "STNE": {
         "company name": "STONECO LTD COM CL A"
     },
@@ -1528,9 +1552,6 @@
     },
     "SVXY": {
         "company name": "PROSHARES TR II SHT VIX ST TRM"
-    },
-    "SWK": {
-        "company name": "STANLEY BLACK & DECKER INC COM"
     },
     "SWKS": {
         "company name": "SKYWORKS SOLUTIONS INC COM"
@@ -1566,16 +1587,13 @@
         "company name": "TECK RESOURCES LTD CL B"
     },
     "TECS": {
-        "company name": "DIREXION SHS ETF TR DAILY TECHNOLOGY"
+        "company name": "DIREXION SHS ETF TR DAILY TECH OCT21"
     },
     "TEVA": {
         "company name": "TEVA PHARMACEUTICAL INDS LTD SPONSORED ADS"
     },
     "TGT": {
         "company name": "TARGET CORP COM"
-    },
-    "THC": {
-        "company name": "TENET HEALTHCARE CORP COM NEW"
     },
     "TJX": {
         "company name": "TJX COS INC NEW COM"
@@ -1585,6 +1603,9 @@
     },
     "TLT": {
         "company name": "ISHARES TR 20 YR TR BD ETF"
+    },
+    "TMC": {
+        "company name": "TMC THE METALS COMPANY INC COM"
     },
     "TME": {
         "company name": "TENCENT MUSIC ENTMT GROUP SPON ADS"
@@ -1621,6 +1642,9 @@
     },
     "TSN": {
         "company name": "TYSON FOODS INC CL A"
+    },
+    "TTCF": {
+        "company name": "TATTOOED CHEF INC COM CL A"
     },
     "TTD": {
         "company name": "THE TRADE DESK INC COM CL A"
@@ -1679,6 +1703,9 @@
     "UPST": {
         "company name": "UPSTART HLDGS INC COM"
     },
+    "URA": {
+        "company name": "GLOBAL X FDS GLOBAL X URANIUM"
+    },
     "URBN": {
         "company name": "URBAN OUTFITTERS INC COM"
     },
@@ -1711,9 +1738,6 @@
     },
     "VIPS": {
         "company name": "VIPSHOP HOLDINGS LIMITED SPONSORED ADS A"
-    },
-    "VIR": {
-        "company name": "VIR BIOTECHNOLOGY INC COM"
     },
     "VIX": {
         "company name": "CBOE Volatility Index"
@@ -1783,6 +1807,9 @@
     },
     "WMT": {
         "company name": "WALMART INC COM"
+    },
+    "WOLF": {
+        "company name": "WOLFSPEED INC COM"
     },
     "WOOF": {
         "company name": "PETCO HEALTH & WELLNESS CO INC COM"
@@ -1861,9 +1888,6 @@
     },
     "XSP": {
         "company name": "Mini-SPX"
-    },
-    "YELP": {
-        "company name": "YELP INC CL A"
     },
     "YETI": {
         "company name": "YETI HLDGS INC COM"
