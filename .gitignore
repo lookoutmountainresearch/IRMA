@@ -57,7 +57,10 @@ venv.bak/
 
 # Omit logs directory and log files.
 logs/
+*.log
 
 # Ignore data directory; each clone should start fresh.
-data/
+data/*
+data/by_symbol/*
+data/price_history_by_symbol/*
 
