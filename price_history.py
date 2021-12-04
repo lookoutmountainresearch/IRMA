@@ -246,7 +246,7 @@ class PriceHistory():
         webpage_html = self.scrape_price_history()
 
         # Get current price
-        current_price_xpath = '//*[@id="quote-header-info"]/div[3]/div[1]/div[1]/span[1]'
+        current_price_xpath = '//*[@id="quote-header-info"]/div[3]/div[1]/div[1]/fin-streamer[1]'
         current_price_results = webpage_html.html.xpath(current_price_xpath, first=True)
         self.current_price = current_price_results.text
         log_print("INFO: Set current price.", "INFO", False)

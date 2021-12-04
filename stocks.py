@@ -107,25 +107,25 @@ class CompanyProfile():
                 self.profile_data['Description'] = r.html.xpath(
                     data_elements['Company']['Description']['xpath'])[0].text
             except Exception as e:
-                print(e)
+                print(f"Description - {e}")
                 self.profile_data['Description'] = ''
             try:
                 self.profile_data['Sector'] = r.html.xpath(
                     data_elements['Company']['Sector']['xpath'])[0].text
             except Exception as e:
-                print(e)
+                print(f"Sector - {e}")
                 self.profile_data['Sector'] = ''
             try:
                 self.profile_data['Industry'] = r.html.xpath(
                     data_elements['Company']['Industry']['xpath'])[0].text
             except Exception as e:
-                print(e)
+                print(f"Industry - {e}")
                 self.profile_data['Industry'] = ''
             try:
                 self.profile_data['Website'] = r.html.xpath(
                     data_elements['Company']['Website']['xpath'])[0].text
             except Exception as e:
-                print(e)
+                print(f"Website - {e}")
                 self.profile_data['Website'] = ''
         else:
             self.profile_data['Stock Type'] = stock_type
