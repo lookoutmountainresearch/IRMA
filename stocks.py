@@ -41,6 +41,7 @@ class CompanyProfile():
     def __init__(self, symbol):
         self.symbol = symbol
         self.profile_data = {}
+        print(self.symbol)
         return
 
     def scrape_profile_info(self):
@@ -102,14 +103,30 @@ class CompanyProfile():
 
         if stock_type == "Company":
             self.profile_data['Stock Type'] = stock_type
-            self.profile_data['Description'] = r.html.xpath(
-                data_elements['Company']['Description']['xpath'])[0].text
-            self.profile_data['Sector'] = r.html.xpath(
-                data_elements['Company']['Sector']['xpath'])[0].text
-            self.profile_data['Industry'] = r.html.xpath(
-                data_elements['Company']['Industry']['xpath'])[0].text
-            self.profile_data['Website'] = r.html.xpath(
-                data_elements['Company']['Website']['xpath'])[0].text
+            try:
+                self.profile_data['Description'] = r.html.xpath(
+                    data_elements['Company']['Description']['xpath'])[0].text
+            except Exception as e:
+                print(e)
+                self.profile_data['Description'] = ''
+            try:
+                self.profile_data['Sector'] = r.html.xpath(
+                    data_elements['Company']['Sector']['xpath'])[0].text
+            except Exception as e:
+                print(e)
+                self.profile_data['Sector'] = ''
+            try:
+                self.profile_data['Industry'] = r.html.xpath(
+                    data_elements['Company']['Industry']['xpath'])[0].text
+            except Exception as e:
+                print(e)
+                self.profile_data['Industry'] = ''
+            try:
+                self.profile_data['Website'] = r.html.xpath(
+                    data_elements['Company']['Website']['xpath'])[0].text
+            except Exception as e:
+                print(e)
+                self.profile_data['Website'] = ''
         else:
             self.profile_data['Stock Type'] = stock_type
             try:
@@ -129,6 +146,7 @@ class CompanyProfile():
         session = HTMLSession()
         url = f'https://finance.yahoo.com/quote/{self.symbol}?p={self.symbol}'
         r = session.get(url)
+        r.html.render
 
         data_elements = {
             "Company": {
@@ -136,16 +154,16 @@ class CompanyProfile():
                     'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[6]/td[2]'
                 },
                 "Average Volume": {
-                    'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[8]/td[2]/span'
+                    'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[8]/td[2]'
                 },
                 "Market Cap": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[1]/td[2]/span'
+                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[1]/td[2]'
                 },
                 "PE Ratio": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[3]/td[2]/span'
+                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[3]/td[2]'
                 },
                 "EPS": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[4]/td[2]/span'
+                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[4]/td[2]'
                 },
                 "Next Earnings Date": {
                     'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[5]/td[2]'
@@ -162,19 +180,19 @@ class CompanyProfile():
                     'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[6]/td[2]'
                 },
                 "Average Volume": {
-                    'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[8]/td[2]/span'
+                    'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[8]/td[2]'
                 },
                 "Net Assets": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[1]/td[2]/span'
+                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[1]/td[2]'
                 },
                 "PE Ratio": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[3]/td[2]/span'
+                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[3]/td[2]'
                 },
                 "Yield": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[4]/td[2]/span'
+                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[4]/td[2]'
                 },
                 "Expense Ratio": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[7]/td[2]/span'
+                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[7]/td[2]'
                 },
             }
         }
@@ -367,7 +385,28 @@ class CompanyProfile():
 # SCRIPT IF RUNNING AS __MAIN__
 ###############################################################################
 if __name__ == "__main__":
-    symbol = "AMT"
+    symbol = "AMBA"
     stock = CompanyProfile(symbol)
     stock.run(source_local=False)
     pprint(stock.profile_data)
+    symbol = "ULTA"
+    stock = CompanyProfile(symbol)
+    stock.run(source_local=False)
+    pprint(stock.profile_data)
+    symbol = "TXT"
+    stock = CompanyProfile(symbol)
+    stock.run(source_local=False)
+    pprint(stock.profile_data)
+    symbol = "SPY"
+    stock = CompanyProfile(symbol)
+    stock.run(source_local=False)
+    pprint(stock.profile_data)
+    symbol = "ARKK"
+    stock = CompanyProfile(symbol)
+    stock.run(source_local=False)
+    pprint(stock.profile_data)
+    symbol = "BTF"
+    stock = CompanyProfile(symbol)
+    stock.run(source_local=False)
+    pprint(stock.profile_data)
+    
