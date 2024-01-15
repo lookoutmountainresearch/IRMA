@@ -28,6 +28,7 @@ from requests_html import HTMLSession
 # from pprint import pprint
 # import pandas as pd
 import os
+from datetime import datetime
 
 import earnings_calendar
 import options
@@ -96,6 +97,11 @@ def get_web_content(url, elements):
             print(f"{e} | {element} | {xpath}")
     return elements
 
+def rename_output_files():
+    today_date = datetime.today().strftime('%Y-%m-%d')
+    os.rename("data/moneypress_suggestions.json", f"data/moneypress_suggestions_{today_date}.json")
+    os.rename("moneypress.log", f"moneypress_{today_date}.log")
+    return
 
 ###############################################################################
 # SAVE LOCAL DATA & LOAD LOCAL DATA LOGIC
@@ -196,5 +202,7 @@ if __name__ == "__main__":
         valid_weekly_options[symbol]['price_history_score'] = ph.price_history_score
     
     save_local_data(valid_weekly_options)
-        
+
+    rename_output_files()
+
     # Get option chain and look for profitable trading strategies

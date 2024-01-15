@@ -60,7 +60,30 @@ logs/
 *.log
 
 # Ignore data directory; each clone should start fresh.
-data/*
-data/by_symbol/*
-data/price_history_by_symbol/*
+./data/*
+./data/by_symbol/*
+./data/price_history_by_symbol/*
 
+
+
+data/by_symbol/*.json
+data/price_history_by_symbol/*.json
+functions/coveredcalls/data/by_symbol/*.json
+functions/coveredcalls/data/price_history_by_symbol/*.json
+data/moneypress_suggestions_*.json
+data/moneypress_suggestions_*.csv
+data/by_symbol/*.json
+data/by_symbol/AMZN.json
+data/by_symbol/CC.json
+data/by_symbol/CMCSA.json
+data/by_symbol/GM.json
+data/by_symbol/HSY.json
+data/by_symbol/IP.json
+data/by_symbol/KLAC.json
+data/by_symbol/MA.json
+data/by_symbol/MO.json
+data/by_symbol/NOC.json
+data/by_symbol/OSTK.json
+data/by_symbol/RCL.json
+data/by_symbol/TMUS.json
+data/by_symbol/X.json
