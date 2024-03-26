@@ -277,12 +277,12 @@ class PriceHistory():
             if len(cells) == 7:
                 self.price_history_data[self.convert_date_to_seconds(cells[0].text)] = {
                     headings[0]: cells[0].text,
-                    headings[1]: float(cells[1].text.replace(",", "")),
-                    headings[2]: float(cells[2].text.replace(",", "")),
-                    headings[3]: float(cells[3].text.replace(",", "")),
-                    headings[4]: float(cells[4].text.replace(",", "")),
-                    headings[5]: float(cells[5].text.replace(",", "")),
-                    headings[6]: int(cells[6].text.replace(",", ""))
+                    headings[2]: float(cells[1].text.replace(",", "").replace("-", "0")),
+                    headings[2]: float(cells[2].text.replace(",", "").replace("-", "0")),
+                    headings[3]: float(cells[3].text.replace(",", "").replace("-", "0")),
+                    headings[4]: float(cells[4].text.replace(",", "").replace("-", "0")),
+                    headings[5]: float(cells[5].text.replace(",", "").replace("-", "0")),
+                    headings[6]: int(cells[6].text.replace(",", "").replace("-", "0"))
                 }
         # Validation
         log_print("INFO: Set price history data.", "INFO", False)
