@@ -7,6 +7,7 @@ from datetime import datetime
 import os
 import json
 from statistics import mean, pstdev
+from pprint import pprint
 
 ###############################################################################
 # MODULE INFO
@@ -246,23 +247,23 @@ class PriceHistory():
         webpage_html = self.scrape_price_history()
 
         # Get current price
-        current_price_xpath = '//*[@id="quote-header-info"]/div[3]/div[1]/div[1]/fin-streamer[1]'
+        current_price_xpath = '//*[@id="nimbus-app"]/section/section/section/article/section[1]/div[2]/div[1]/section/div/section[1]/div[1]/fin-streamer[1]/span'
         current_price_results = webpage_html.html.xpath(current_price_xpath, first=True)
         self.current_price = current_price_results.text
         log_print("INFO: Set current price.", "INFO", False)
 
         # Find table data headings
-        headings_xpath = '//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[2]/table/thead'
+        headings_xpath = '//*[@id="nimbus-app"]/section/section/section/article/div[1]/div[3]/table/thead/tr'
         headings_results = webpage_html.html.xpath(headings_xpath, first=True)
         headings_soup = BeautifulSoup(headings_results.html, "lxml")
         headings_html = headings_soup.find_all("th")
         headings = []
         for heading in headings_html:
-            headings.append(heading.text.strip("*"))
+            headings.append(heading.text.strip("*").split("  ")[0])
             # self.price_history_data[heading.text.strip("*")] = []
 
         # Set table data to variable.
-        stock_history_table_xpath = '//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[2]/table/tbody'
+        stock_history_table_xpath = '//*[@id="nimbus-app"]/section/section/section/article/div[1]/div[3]/table/tbody'
         stock_history_table_data = webpage_html.html.xpath(
             stock_history_table_xpath, first=True)
         stock_history_soup = BeautifulSoup(
@@ -277,7 +278,7 @@ class PriceHistory():
             if len(cells) == 7:
                 self.price_history_data[self.convert_date_to_seconds(cells[0].text)] = {
                     headings[0]: cells[0].text,
-                    headings[2]: float(cells[1].text.replace(",", "").replace("-", "0")),
+                    headings[1]: float(cells[1].text.replace(",", "").replace("-", "0")),
                     headings[2]: float(cells[2].text.replace(",", "").replace("-", "0")),
                     headings[3]: float(cells[3].text.replace(",", "").replace("-", "0")),
                     headings[4]: float(cells[4].text.replace(",", "").replace("-", "0")),
@@ -307,6 +308,7 @@ class PriceHistory():
         '''
 
         log_print("INFO: Getting simple moving average data.", "INFO", False)
+        pprint(self.price_history_data)
 
         # Set start and end to get list of values
         absolute_end = len(self.price_history_data) - 1

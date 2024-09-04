@@ -68,27 +68,27 @@ class CompanyProfile():
             },
             "Company": {
                 "Description": {
-                    'xpath': '//*[@id="Col1-0-Profile-Proxy"]/section/section[2]/p'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/section[3]/section[1]/p'
                 },
                 "Sector": {
-                    'xpath': '//*[@id="Col1-0-Profile-Proxy"]/section/div[1]/div/div/p[2]/span[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/section[2]/section[2]/div/dl/div[1]/dd/a'
                 },
                 "Industry": {
-                    'xpath': '//*[@id="Col1-0-Profile-Proxy"]/section/div[1]/div/div/p[2]/span[4]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/section[2]/section[2]/div/dl/div[2]/a'
                 },
                 "Website": {
-                    'xpath': '//*[@id="Col1-0-Profile-Proxy"]/section/div[1]/div/div/p[1]/a[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/section[2]/section[2]/div/div/a[2]'
                 }
             },
             "ETF": {
                 "Description": {
-                    'xpath': '//*[@id="Col2-2-QuoteModule-Proxy"]/div/div/h3/span'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/section[2]/section[1]/p'
                 },
                 "Category": {
-                    'xpath': '//*[@id="Col1-0-Profile-Proxy"]/section/div[2]/div[1]/div/div[1]/span[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/section[2]/section[2]/div/table/tbody/tr[1]/td[2]'
                 },
                 "Fund Family": {
-                    'xpath': '//*[@id="Col1-0-Profile-Proxy"]/section/div[2]/div[1]/div/div[2]/span[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/section[2]/section[2]/div/table/tbody/tr[2]/td[2]'
                 }
             }
         }
@@ -151,48 +151,48 @@ class CompanyProfile():
         data_elements = {
             "Company": {
                 "Year Range": {
-                    'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[6]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[6]/span[2]/fin-streamer'
                 },
                 "Average Volume": {
-                    'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[8]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[8]/span[2]/fin-streamer'
                 },
                 "Market Cap": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[1]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[9]/span[2]/fin-streamer'
                 },
                 "PE Ratio": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[3]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[11]/span[2]/fin-streamer'
                 },
                 "EPS": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[4]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[12]/span[2]/fin-streamer'
                 },
                 "Next Earnings Date": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[5]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[13]/span[2]'
                 },
                 "Forward Dividend": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[6]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[14]/span[2]'
                 },
                 "Dividend Ex-Date": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[7]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[15]/span[2]'
                 }
             },
             "ETF": {
                 "Year Range": {
-                    'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[6]/td[2]'
+                    'xpath': '///*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[6]/span[2]/fin-streamer'
                 },
                 "Average Volume": {
-                    'xpath': '//*[@id="quote-summary"]/div[1]/table/tbody/tr[8]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[8]/span[2]/fin-streamer'
                 },
                 "Net Assets": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[1]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[9]/span[2]'
                 },
                 "PE Ratio": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[3]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[11]/span[2]'
                 },
                 "Yield": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[4]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[12]/span[2]'
                 },
                 "Expense Ratio": {
-                    'xpath': '//*[@id="quote-summary"]/div[2]/table/tbody/tr[7]/td[2]'
+                    'xpath': '//*[@id="nimbus-app"]/section/section/section/article/div[2]/ul/li[15]/span[2]'
                 },
             }
         }
