@@ -167,9 +167,6 @@
     "AVTR": {
         "company name": "AVANTOR INC COM"
     },
-    "AVXL": {
-        "company name": "ANAVEX LIFE SCIENCES CORP COM NEW"
-    },
     "AXP": {
         "company name": "AMERICAN EXPRESS CO COM"
     },
@@ -190,12 +187,6 @@
     },
     "BB": {
         "company name": "BLACKBERRY LTD COM"
-    },
-    "BBAI": {
-        "company name": "BIGBEAR AI HLDGS INC COM"
-    },
-    "BBIO": {
-        "company name": "BRIDGEBIO PHARMA INC COM"
     },
     "BBWI": {
         "company name": "BATH & BODY WORKS INC COM"
@@ -231,7 +222,7 @@
         "company name": "PROSHARES TR SHORT BITCOIN"
     },
     "BITO": {
-        "company name": "PROSHARES TR BITCOIN STRATE"
+        "company name": "PROSHARES TR BITCOIN ETF"
     },
     "BITX": {
         "company name": "2x Bitcoin Strategy ETF"
@@ -319,6 +310,9 @@
     },
     "CCL": {
         "company name": "CARNIVAL CORP PAIRED CTF"
+    },
+    "CEG": {
+        "company name": "CONSTELLATION ENERGY CORP COM"
     },
     "CELH": {
         "company name": "CELSIUS HLDGS INC COM NEW"
@@ -464,6 +458,9 @@
     "DE": {
         "company name": "DEERE & CO COM"
     },
+    "DECK": {
+        "company name": "DECKERS OUTDOOR CORP COM"
+    },
     "DELL": {
         "company name": "DELL TECHNOLOGIES INC CL C"
     },
@@ -533,9 +530,6 @@
     "EBS": {
         "company name": "EMERGENT BIOSOLUTIONS INC COM"
     },
-    "EDIT": {
-        "company name": "EDITAS MEDICINE INC COM"
-    },
     "EEM": {
         "company name": "ISHARES TR MSCI EMG MKT ETF"
     },
@@ -575,17 +569,17 @@
     "ETSY": {
         "company name": "ETSY INC COM"
     },
-    "EWU": {
-        "company name": "ISHARES TR MSCI UK ETF NEW"
-    },
     "EWZ": {
         "company name": "ISHARES INC MSCI BRAZIL ETF"
+    },
+    "EXE": {
+        "company name": "EXPAND ENERGY CORPORATION COM"
     },
     "EXPE": {
         "company name": "EXPEDIA GROUP INC COM NEW"
     },
     "F": {
-        "company name": "FORD MTR CO DEL COM"
+        "company name": "FORD MTR CO COM"
     },
     "FANG": {
         "company name": "DIAMONDBACK ENERGY INC COM"
@@ -662,8 +656,8 @@
     "GEO": {
         "company name": "GEO GROUP INC NEW COM"
     },
-    "GERN": {
-        "company name": "GERON CORP COM"
+    "GEV": {
+        "company name": "GE VERNOVA INC COM"
     },
     "GILD": {
         "company name": "GILEAD SCIENCES INC COM"
@@ -709,9 +703,6 @@
     },
     "GTLB": {
         "company name": "GITLAB INC CLASS A COM"
-    },
-    "HA": {
-        "company name": "HAWAIIAN HOLDINGS INC COM"
     },
     "HAL": {
         "company name": "HALLIBURTON CO COM"
@@ -833,9 +824,6 @@
     "ITB": {
         "company name": "iShares U.S. Home Construction ETF"
     },
-    "IVR": {
-        "company name": "INVESCO MORTGAGE CAPITAL INC COM"
-    },
     "IVV": {
         "company name": "ISHARES TR CORE S&P500 ETF"
     },
@@ -850,9 +838,6 @@
     },
     "JD": {
         "company name": "JD.COM INC SPON ADS CL A"
-    },
-    "JDST": {
-        "company name": "DIREXION SHS ETF TR DAILY JR GOLD MI"
     },
     "JETS": {
         "company name": "ETF SER SOLUTIONS US GLB JETS"
@@ -935,9 +920,6 @@
     "LI": {
         "company name": "LI AUTO INC SPONSORED ADS"
     },
-    "LII": {
-        "company name": "LENNOX INTL INC COM"
-    },
     "LLY": {
         "company name": "ELI LILLY & CO COM"
     },
@@ -957,7 +939,7 @@
         "company name": "ISHARES TR IBOXX INV CP ETF"
     },
     "LRCX": {
-        "company name": "LAM RESEARCH CORP COM"
+        "company name": "LAM RESEARCH CORP COM NEW"
     },
     "LULU": {
         "company name": "LULULEMON ATHLETICA INC COM"
@@ -990,10 +972,10 @@
         "company name": "MARRIOTT INTL INC NEW CL A"
     },
     "MARA": {
-        "company name": "MARATHON DIGITAL HOLDINGS INC COM"
+        "company name": "MARA HOLDINGS INC COM"
     },
     "MAXN": {
-        "company name": "MAXEON SOLAR TECHNOLOGIES LTD SHS"
+        "company name": "MAXEON SOLAR TECHNOLOGIES LTD SHS NEW"
     },
     "MBLY": {
         "company name": "MOBILEYE GLOBAL INC COMMON CLASS A"
@@ -1259,6 +1241,9 @@
     "PG": {
         "company name": "PROCTER AND GAMBLE CO COM"
     },
+    "PGR": {
+        "company name": "PROGRESSIVE CORP COM"
+    },
     "PHM": {
         "company name": "PULTE GROUP INC COM"
     },
@@ -1279,6 +1264,9 @@
     },
     "PNC": {
         "company name": "PNC FINL SVCS GROUP INC COM"
+    },
+    "POET": {
+        "company name": "POET TECHNOLOGIES INC COM NEW"
     },
     "PPG": {
         "company name": "PPG INDS INC COM"
@@ -1400,14 +1388,11 @@
     "SHOP": {
         "company name": "SHOPIFY INC CL A"
     },
-    "SHOT": {
-        "company name": "SAFETY SHOT INC COM NEW"
-    },
     "SIG": {
         "company name": "SIGNET JEWELERS LIMITED SHS"
     },
     "SIRI": {
-        "company name": "SIRIUS XM HOLDINGS INC COM"
+        "company name": "SIRIUSXM HOLDINGS INC COMMON STOCK"
     },
     "SLB": {
         "company name": "SCHLUMBERGER LTD COM STK"
@@ -1416,10 +1401,13 @@
         "company name": "ISHARES SILVER TR ISHARES"
     },
     "SMCI": {
-        "company name": "SUPER MICRO COMPUTER INC COM"
+        "company name": "SUPER MICRO COMPUTER INC COM NEW"
     },
     "SMH": {
         "company name": "VANECK ETF TRUST SEMICONDUCTR ETF"
+    },
+    "SMMT": {
+        "company name": "SUMMIT THERAPEUTICS INC COM"
     },
     "SMR": {
         "company name": "NUSCALE PWR CORP CL A COM"
@@ -1465,9 +1453,6 @@
     },
     "SPR": {
         "company name": "SPIRIT AEROSYSTEMS HLDGS INC COM CL A"
-    },
-    "SPWRQ": {
-        "company name": "SUNPOWER CORP COM"
     },
     "SPX": {
         "company name": "SPX"
@@ -1517,9 +1502,6 @@
     "SWKS": {
         "company name": "SKYWORKS SOLUTIONS INC COM"
     },
-    "SWN": {
-        "company name": "SOUTHWESTERN ENERGY CO COM"
-    },
     "SYM": {
         "company name": "SYMBOTIC INC CLASS A COM"
     },
@@ -1541,9 +1523,6 @@
     "TECK": {
         "company name": "TECK RESOURCES LTD CL B"
     },
-    "TELL": {
-        "company name": "TELLURIAN INC NEW COM"
-    },
     "TEM": {
         "company name": "TEMPUS AI INC CL A"
     },
@@ -1558,6 +1537,9 @@
     },
     "TGTX": {
         "company name": "TG THERAPEUTICS INC COM"
+    },
+    "TIGR": {
+        "company name": "UP FINTECH HLDG LTD SPONSORED ADS"
     },
     "TJX": {
         "company name": "TJX COS INC NEW COM"
@@ -1612,9 +1594,6 @@
     },
     "TTWO": {
         "company name": "TAKE-TWO INTERACTIVE SOFTWARE COM"
-    },
-    "TUP": {
-        "company name": "TUPPERWARE BRANDS CORP COM"
     },
     "TWLO": {
         "company name": "TWILIO INC CL A"
@@ -1758,7 +1737,7 @@
         "company name": "WORKDAY INC CL A"
     },
     "WDC": {
-        "company name": "WESTERN DIGITAL CORP. COM"
+        "company name": "WESTERN DIGITAL CORP COM"
     },
     "WEAT": {
         "company name": "TEUCRIUM COMMODITY TR WHEAT FD"
@@ -1789,9 +1768,6 @@
     },
     "WULF": {
         "company name": "TERAWULF INC COM"
-    },
-    "WW": {
-        "company name": "WW INTL INC COM"
     },
     "WYNN": {
         "company name": "WYNN RESORTS LTD COM"
@@ -1852,6 +1828,9 @@
     },
     "XSP": {
         "company name": "Mini-SPX"
+    },
+    "YANG": {
+        "company name": "DIREXION SHS ETF TR DAILY FTSE CHINA"
     },
     "YINN": {
         "company name": "DIREXION SHS ETF TR DL FTSE BULL 3X"
