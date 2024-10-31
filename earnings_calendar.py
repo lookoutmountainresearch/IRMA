@@ -22,22 +22,23 @@ logger = logging.getLogger(__name__)
 # OPTIONS CLASS TO GET A LIST OF OPTIONABLE STOCK SYMBOLS
 ###############################################################################
 class EarningsCalendar():
-    '''
-    Class to get earnings data for determined number of days in the past
-    starting with the current date. Configure using the
-    config_earnings_days_in_past attribute. By default,
-    config_earnings_days_in_past is set to 15 days.
+    """
+    Retrieves earnings data for a specified number of days in the past, 
+    starting from the current date. This can be configured using the 
+    `config_earnings_days_in_past` attribute, which is set to 15 days by default.
 
     Attributes:
-        config_earnings_days_in_past (int): number of days in the past to
-            return company stock symbols.
-    
+        config_earnings_days_in_past (int): Number of days in the past to retrieve earnings data.
+        earnings_calendar_data (dict): Stores earnings data for various companies.
+        total_records (int): Total number of records in `earnings_calendar_data`.
+
     Example:
         ec = EarningsCalendar()
         ec.run()
-
-    '''
+    """
     def __init__(self):
+        """Initializes EarningsCalendar with default settings for 
+        retrieving earnings data."""
         # CONFIGURATION
         self.config_earnings_days_in_past = 15
         # DATA
@@ -51,22 +52,20 @@ class EarningsCalendar():
     ###############################################################################
 
     def convert_to_float(self, value):
-        '''
-        Converts string to float when there are possitve (+) or negative (-) in the
-        zero-ith place in the string.
+        """
+        Converts a string representation of a number to a float, handling 
+        cases where the string may start with a '+' or '-' symbol.
 
         Args:
-            value (str): value to be converted to float.
-        
-        Raises:
+            value (str): The string value to convert to float.
 
         Returns:
-            converted_value (float): number with float type.
-        
+            float: The converted float value.
+
         Example:
-            convert_to_float("+74.75")
-            print(convert_to_float) # 74.75
-        '''
+            >>> convert_to_float("+74.75")
+            74.75
+        """
         if value == "-":
             converted_value = value
         elif value[0] == "+":
@@ -78,12 +77,32 @@ class EarningsCalendar():
         return converted_value
 
     def calc_days_since_earnings(self, earnings_date):
+        """
+        Calculates the number of days since a given earnings date.
+
+        Args:
+            earnings_date (str): The date of earnings in 'YYYY-MM-DD' format.
+
+        Returns:
+            int: The number of days since the given `earnings_date`.
+        """
         first_date = datetime.strptime(earnings_date, '%Y-%m-%d')
         last_date = datetime.today()
         delta = last_date - first_date
         return delta.days
         
     def calc_earnings_score(self, earnings_surprise, earnings_date):
+        """
+        Calculates a score based on the earnings surprise value and 
+        the number of days since the earnings date.
+
+        Args:
+            earnings_surprise (float): The earnings surprise percentage.
+            earnings_date (str): The date of earnings in 'YYYY-MM-DD' format.
+
+        Returns:
+            float: The computed earnings score.
+        """
         if earnings_surprise == '-':
             earnings_surprise_score = 0.0
         elif earnings_surprise >= 10.0 and earnings_surprise < 20.0:
@@ -110,22 +129,16 @@ class EarningsCalendar():
         return earnings_score
 
     def scrape_earnings_calendar_stocks(self, earnings_date):
-        '''
-        Function that gets all company stock symbols and earnings data given a
-        specific date. This function will automatically cycle through multiple
-        pages if they exist and save the data in earnings_calendar_data in the
-        object. See also get_earnings_calendar_stocks() for getting the entire list
-        in a date range.
+        """
+        Retrieves earnings data for all companies on a specific date 
+        from Yahoo Finance, handling multiple pages if necessary.
 
         Args:
-            None.
-        
-        Raises:
-            None.
-        
+            earnings_date (str): The date for which to retrieve earnings data.
+
         Returns:
-            None.
-        '''
+            None
+        """
         offset = 0
         url = f'https://finance.yahoo.com/calendar/earnings?from=2021-05-02&to=2021-05-08&day={earnings_date}&offset={offset}&size=100'
         webresults = session.get(url, timeout=2.0)
@@ -201,19 +214,16 @@ class EarningsCalendar():
         return
 
     def get_list_of_days(self, number_of_days):
-        '''
-        Given a number of days, this function will return a list of dates in
-        '%Y-%m-%d format.
+        """
+        Generates a list of dates starting from today, extending back by 
+        the specified number of days.
 
-        Args: 
-            number_of_days (int): number of days to return.
-        
-        Raises:
+        Args:
+            number_of_days (int): The number of past days to include in the list.
 
         Returns:
-            list_of_days (list): list of dates between today and specified number
-                of days.
-        '''
+            list of str: A list of date strings in 'YYYY-MM-DD' format.
+        """
         import datetime
         list_of_days = []
         start_day = datetime.datetime.now()
@@ -228,24 +238,14 @@ class EarningsCalendar():
         return list_of_days
 
     def get_earnings_calendar_stocks(self):
-        '''
-        Function that gets list of dates and runs the
-        scrape_earnings_calendar_stocks() function for each date. This will
-        utilimately populate the earnings_calendar_data in the object and save
-        data local.
+        """
+        Retrieves earnings data for a range of dates based on the 
+        `config_earnings_days_in_past` setting. Data is saved in the 
+        `earnings_calendar_data` attribute.
 
-        Args:
-            None.
-        
-        Raises:
-            None.
-        
         Returns:
-            None.
-        
-        Upcoming Features:
-            #TODO: Add auto-save to local.
-        '''
+            None
+        """
         date_list = self.get_list_of_days(self.config_earnings_days_in_past)
         for d in date_list:
             print(d)
@@ -260,22 +260,16 @@ class EarningsCalendar():
     ###############################################################################
 
     def save_local_data(self, data):
-        '''
-        Saves earnings data in json format to a local file called
-        earnings_calendar.json in a directory named data. Provide data in a Python
-        dictionary format. Save_local_data will automatically be performed after 
-        get_earnings_calendar_stocks(). Existing files will be automatically
-        overwritten.
+        """
+        Saves the earnings data as a JSON file named 'earnings_calendar.json' 
+        in the 'data' directory. Existing files are overwritten.
 
         Args:
-            data (dict): dictionary to be saved as json.
-
-        Raises:
-            None.
+            data (dict): The earnings data to save.
 
         Returns:
-            None.
-        '''
+            None
+        """
         # Check if directory exists.
         if not os.path.exists('data'):
             os.makedirs('data')
@@ -286,21 +280,13 @@ class EarningsCalendar():
         return
 
     def load_local_data(self):
-        '''
-        Loads earnings calendar data from a local file called
-        earnings_calendar.json in a directory named data. Returns data in a Python
-        dictionary format.
-
-        Args:
-            None.
-
-        Raises:
-            #TODO: Add error checking to make sure file exists. CRITICAL: Logs
-                critical message if file doesn't exist.
+        """
+        Loads earnings data from a local JSON file named 
+        'earnings_calendar.json' in the 'data' directory.
 
         Returns:
-            data (dict): returns the option data in the data/options.json file.
-        '''
+            dict: The loaded earnings data.
+        """
         
         with open('data/earnings_calendar.json') as json_file:
             data = json.load(json_file)
@@ -358,28 +344,23 @@ class EarningsCalendar():
     ###########################################################################
 
     def run(self, **kwargs):
-        '''
-        Populates a list of stocks with earnings in the recent past.
+        """
+        Populates earnings data by fetching it from either a web source or 
+        a local file, based on the provided keyword arguments.
 
         Args:
-            OPTIONAL source_web (bool): kwargs used to get options list from
-                the web. By default, if no kwargs are specified, run will get
-                data from the web.
-            OPTIONAL source_local (bool): kwargs to load data from
-                data/option.json if exists. If option.json does not exist,
-                function will get data from the web.
-        
-        Raises:
-            None.
-        
+            **kwargs: Optional arguments:
+                - source_web (bool): Set to True to fetch data from the web.
+                - source_local (bool): Set to True to load data from a local file.
+
         Returns:
-            None.
+            None
         
         Upcoming Features:
             #TODO: Query data to determine number of surprises.
             #TODO: Create list sorted from largest to smallest surprises.
             #TODO: Create history of earnings for a given symbol.
-        '''
+        """
         # Set Python kwargs to variable
         logger.debug(kwargs)
         web_data_arg = kwargs.get("source_web", False)
