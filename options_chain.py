@@ -24,10 +24,28 @@ html_session = HTMLSession()
 
 
 class OptionsChain():
-    '''
+    """
+    A class to retrieve and parse option chain data from Yahoo Finance.
 
-    '''
+    This class scrapes options data for a given stock symbol, including call 
+    and put options for available expiration dates, using Yahoo Finance's 
+    options page. It also retrieves the current price for the specified symbol.
+    """
     def __init__(self, symbol):
+        """
+        Initializes the OptionsChain object.
+
+        Args:
+            symbol (str): The stock symbol (ticker) to retrieve options data for.
+
+        Attributes:
+            options_chains (list): List of available expiration dates in seconds.
+            url_base (str): Base URL for the options chain.
+            url_chain (str): URL template for the options chain with a specific date.
+            option_chain_call_data (dict): Dictionary to store call options data.
+            option_chain_put_data (dict): Dictionary to store put options data.
+            current_price (float): The current price of the stock.
+        """
         self.symbol = symbol
         self.options_chains = []
         self.url_base = f"https://finance.yahoo.com/quote/{self.symbol}/options?p={self.symbol}"
@@ -37,11 +55,18 @@ class OptionsChain():
         self.current_price = -1
     
     def convert_date_to_seconds(self, ex_date_str):
-        '''
-        Provide a valid date and function will convert date to seconds from 
-        1/1/1970.
-        Requires date as argument.
-        '''
+        """
+        Converts a given expiration date to seconds from the Unix epoch.
+
+        Args:
+            ex_date_str (str): Expiration date in 'Month Day, Year' format.
+
+        Returns:
+            int: The number of seconds from 1/1/1970 to the expiration date.
+
+        Logs:
+            Logs the computed seconds between the Unix epoch and the expiration date.
+        """
         start_date_str = '1970-01-01'
         start_date = datetime.strptime(start_date_str, '%Y-%m-%d')
         ex_date = datetime.strptime(ex_date_str, '%B %d, %Y')
@@ -51,10 +76,18 @@ class OptionsChain():
         return date_in_seconds
 
     def get_option_chain_list(self, webpage_html):
-        '''
-        Gets the list of option chains.
-        Requires argument in the form of webpage html.
-        '''
+        """
+        Extracts a list of available expiration dates from the options page HTML.
+
+        Args:
+            webpage_html (HTML): HTML content of the options page.
+
+        Returns:
+            None
+
+        Logs:
+            Logs whether option chains were successfully retrieved or an error if not.
+        """
         option_chain_list_xpath = '//*[@id="Col1-1-OptionContracts-Proxy"]/section/div/div[1]/select'
         try:
             option_chain_list_html = webpage_html.html.xpath(option_chain_list_xpath, first=True)
@@ -72,13 +105,18 @@ class OptionsChain():
         return
 
     def scrape_option_chain_data(self, **kwargs):
-        '''
-        Scrape html from the correct url and return the html for further 
-        processing.
-        No arguments are required.
-        OPTIONAL: provide "date" keyword equal to the number of seconds from 
-        1/1/1970.
-        '''
+        """
+        Fetches HTML data from Yahoo Finance for a given options expiration date.
+
+        Args:
+            **kwargs (optional): Optional date argument in seconds from the Unix epoch.
+
+        Returns:
+            HTML: HTML content of the options page for the provided or default expiration date.
+
+        Logs:
+            Logs the URL used to fetch the data, including whether a specific date was provided.
+        """
         # Iterating over the Python kwargs dictionary
         result = ""
         logger.info(kwargs)
@@ -102,11 +140,18 @@ class OptionsChain():
         return webpage_results
 
     def get_current_price(self, webpage_html):
-        '''
-        Gets the current price given webpage html results from 
-        scrape_option_chain_data function.
-        Requires argument in the form of webpage html.
-        '''
+        """
+        Retrieves the current stock price from the Yahoo Finance options page HTML.
+
+        Args:
+            webpage_html (HTML): HTML content of the options page.
+
+        Returns:
+            None
+
+        Logs:
+            Logs the current price retrieved or an error if the price could not be found.
+        """
         try:
             current_price_xpath = '//*[@id="quote-header-info"]/div[3]/div[1]/div/span[1]'
             self.current_price = webpage_html.html.xpath(current_price_xpath, first=True).text
@@ -118,6 +163,18 @@ class OptionsChain():
         return
 
     def get_option_chain_data(self, webpage_html):
+        """
+        Extracts and saves the call and put options data from the options page HTML.
+
+        Args:
+            webpage_html (HTML): HTML content of the options page.
+
+        Returns:
+            None
+
+        Logs:
+            Logs the options data headings, tables, and entries, including errors if tables are missing.
+        """
         # Get Ex Date for options and convert to seconds from 1/1/1970
         try:
             ex_date_xpath = '//*[@id="Col1-1-OptionContracts-Proxy"]/section/section[1]/div[1]/span[3]'
@@ -240,9 +297,15 @@ class OptionsChain():
         return
 
     def run(self):
-        '''
+        """
+        Main function to initialize scraping and data collection for the specified symbol.
 
-        '''
+        Retrieves the initial HTML, gets current price and options chains, 
+        and then iterates over available expiration dates to collect data for each.
+
+        Returns:
+            None
+        """
         
         # Initial scrape to set key data & get list of option chains
         webpage_results = self.scrape_option_chain_data()
