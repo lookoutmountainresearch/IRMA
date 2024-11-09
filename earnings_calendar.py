@@ -141,6 +141,7 @@ class EarningsCalendar():
         """
         offset = 0
         url = f'https://finance.yahoo.com/calendar/earnings?day={earnings_date}&offset={offset}&size=100'
+        print(url)
         
         #"https://finance.yahoo.com/calendar/earnings?from=2024-11-03&to=2024-11-09&day=2024-11-07"
         #"https://finance.yahoo.com/calendar/earnings?from=2024-11-03&to=2024-11-09&day=2024-11-07&offset=100&size=100"
@@ -187,6 +188,7 @@ class EarningsCalendar():
                 if offset != 0:
                     url = f'https://finance.yahoo.com/calendar/earnings?day={earnings_date}&offset={offset}&size=100'
                     webresults = session.get(url)
+                    print(url)
                 xpath = '//*[@id="cal-res-table"]/div[1]/table/tbody'
                 try:
                     table_html = webresults.html.xpath(xpath, first=True)
