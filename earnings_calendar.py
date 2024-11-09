@@ -140,7 +140,11 @@ class EarningsCalendar():
             None
         """
         offset = 0
-        url = f'https://finance.yahoo.com/calendar/earnings?from=2021-05-02&to=2021-05-08&day={earnings_date}&offset={offset}&size=100'
+        url = f'https://finance.yahoo.com/calendar/earnings?day={earnings_date}&offset={offset}&size=100'
+        
+        #"https://finance.yahoo.com/calendar/earnings?from=2024-11-03&to=2024-11-09&day=2024-11-07"
+        #"https://finance.yahoo.com/calendar/earnings?from=2024-11-03&to=2024-11-09&day=2024-11-07&offset=100&size=100"
+        
         webresults = session.get(url, timeout=2.0)
         # webresults.html.render()
 
