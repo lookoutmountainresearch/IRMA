@@ -185,7 +185,7 @@ class EarningsCalendar():
             cycle = 1
             while cycle <= number_of_cycles:
                 if offset != 0:
-                    url = f'https://finance.yahoo.com/calendar/earnings?from=2021-05-02&to=2021-05-08&day={earnings_date}&offset={offset}&size=100'
+                    url = f'https://finance.yahoo.com/calendar/earnings?day={earnings_date}&offset={offset}&size=100'
                     webresults = session.get(url)
                 xpath = '//*[@id="cal-res-table"]/div[1]/table/tbody'
                 try:
